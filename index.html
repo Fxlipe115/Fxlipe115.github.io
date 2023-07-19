@@ -4,12 +4,31 @@
 	<meta charset="utf-8"></meta>
 	<title>GitHub</title>
 	<style type=”text/css”>
-	body {
-		url(http://cur.cursors-4u.net/anime/ani-12/ani1136.ani), url(http://cur.cursors-4u.net/anime/ani-12/ani1136.gif), default !important;
+	body, html {
+		cursor: url(http://cur.cursors-4u.net/anime/ani-12/ani1136.ani), url(http://cur.cursors-4u.net/anime/ani-12/ani1136.gif), auto;
+		height: 100%;
 	}
 	</style>
 </head>
-<body background="images/back.gif" style="text-align:center">
+<script>
+	let alreadyPlayedDialUp = false;
+	function playDialUp() {
+		if (!alreadyPlayedDialUp) {
+			var audio = new Audio('audios/dial-up.mp3');
+			audio.play();
+			alreadyPlayedDialUp = true;
+
+			audio.addEventListener('ended',function(){
+				audio.src = "audios/welcome.mp3";
+				audio.loop = true;
+				audio.pause();
+				audio.load();
+				audio.play();
+			});
+		}
+	}
+</script>
+<body background="images/back.gif" style="text-align:center" onmouseover="playDialUp()">
 	<table background="images/back.gif" align="center" border="6" cellpadding="8">
 		<tbody>
 			<tr>
