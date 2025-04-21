@@ -4,9 +4,14 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Felipe Graeff's personal website">
-    <title>Felipe Graeff, Software Developer</title>
+    <meta name="description" content="Felipe Graeff's personal website - Software Developer Portfolio">
+    <title>Felipe Graeff | Software Developer</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
+    <link rel="stylesheet" type="text/css" href="css/additional.css">
     <script src="js/script.js" defer></script>
   </head>
   <body>
@@ -14,6 +19,10 @@
       <div class="content-wrapper title">
         <h1>Felipe Graeff</h1>
         <h2>Software Developer</h2>
+        <div class="header-cta">
+          <a href="#projects-section" class="btn btn-primary">View My Work</a>
+          <a href="#contact-section" class="btn btn-secondary">Get In Touch</a>
+        </div>
       </div>
     </header>
 
@@ -24,136 +33,224 @@
         </svg>
       </button>
       <ul>
-        <li><a href="#about-me-section">About me</a></li>
-        <li><a href="#interests-section">Interests</a></li>
-        <li><a href="#skills-section">Skills</a></li>
-        <li><a href="#projects-section">Projects</a></li>
-        <li><a href="#formation-section">Formation</a></li>
-        <li><a href="#contact-section">Contact</a></li>
+        <li><a href="#about-me-section"><i class="fas fa-user"></i> About Me</a></li>
+        <li><a href="#interests-section"><i class="fas fa-lightbulb"></i> Interests</a></li>
+        <li><a href="#skills-section"><i class="fas fa-code"></i> Skills</a></li>
+        <li><a href="#projects-section"><i class="fas fa-project-diagram"></i> Projects</a></li>
+        <li><a href="#formation-section"><i class="fas fa-graduation-cap"></i> Formation</a></li>
+        <li><a href="#contact-section"><i class="fas fa-envelope"></i> Contact</a></li>
       </ul>
     </nav>
 
     <div class="content-wrapper">
-      <main id="about-me-section" class="page-section">
-          <h3>About me</h3>
-          <p>This is the about me section</p>
+      <main id="about-me-section" class="page-section fade-in">
+          <h3>About Me</h3>
+          <div class="about-content">
+            <div class="about-text">
+              <p>Hello! I'm Felipe Graeff, a passionate software developer with a focus on creating efficient and user-friendly applications. I enjoy solving complex problems and turning ideas into reality through code.</p>
+              <p>With a strong foundation in computer science and a continuous learning mindset, I strive to stay updated with the latest technologies and best practices in the industry.</p>
+              <p>When I'm not coding, you can find me exploring new technologies, contributing to open-source projects, or expanding my knowledge through online courses and technical books.</p>
+            </div>
+          </div>
       </main>
       
-      <section id="interests-section" class="page-section">
+      <section id="interests-section" class="page-section fade-in">
         <h3>Interests</h3>
-        <dl>
-          <dt>Web development</dt>
-          <dd>Front-end and back-end development</dd>
-          <dt>Open source</dt>
-          <dd>Contributing to open source projects</dd>
-          <dt>Learning</dt>
-          <dd>Learning new technologies and programming languages</dd>
-        </dl>
+        <div class="interests-grid">
+          <div class="interest-item">
+            <i class="fas fa-globe"></i>
+            <dt>Web Development</dt>
+            <dd>Front-end and back-end development, creating responsive and interactive web applications.</dd>
+          </div>
+          <div class="interest-item">
+            <i class="fab fa-github"></i>
+            <dt>Open Source</dt>
+            <dd>Contributing to open source projects, collaborating with developers worldwide.</dd>
+          </div>
+          <div class="interest-item">
+            <i class="fas fa-book"></i>
+            <dt>Learning</dt>
+            <dd>Continuously learning new technologies and programming languages to expand my skill set.</dd>
+          </div>
+        </div>
       </section>
     
-      <section id="skills-section" class="page-section">
+      <section id="skills-section" class="page-section fade-in">
         <h3>Skills</h3>
-        <dl>
-          <dt>Programming languages</dt>
-          <dd>
-            <ul>
-              <li>JavaScript</li>
-              <li>Python</li>
-              <li>Ruby</li>
-            </ul>
-          </dd>
-          <dt>Frameworks</dt>
-          <dd>
-            <ul>
-              <li>React</li>
-              <li>Ruby on Rails</li>
-              <li>Django</li>
-            </ul>
-          </dd>
-          <dt>Tools</dt>
-          <dd>
-            <ul>
-              <li>Git</li>
-              <li>GitHub</li>
-              <li>VS Code</li>
-            </ul>
-          </dd>
-        </dl>
+        <div class="skills-container">
+          <div class="skill-category">
+            <div class="skill-header">
+              <i class="fas fa-code"></i>
+              <dt>Programming Languages</dt>
+            </div>
+            <dd>
+              <div class="skill-bars">
+                <div class="skill-item">
+                  <span class="skill-name">JavaScript</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Python</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 85%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Ruby</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 75%"></div>
+                  </div>
+                </div>
+              </div>
+            </dd>
+          </div>
+          
+          <div class="skill-category">
+            <div class="skill-header">
+              <i class="fas fa-laptop-code"></i>
+              <dt>Frameworks</dt>
+            </div>
+            <dd>
+              <div class="skill-bars">
+                <div class="skill-item">
+                  <span class="skill-name">React</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 88%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Ruby on Rails</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 80%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">Django</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 78%"></div>
+                  </div>
+                </div>
+              </div>
+            </dd>
+          </div>
+          
+          <div class="skill-category">
+            <div class="skill-header">
+              <i class="fas fa-tools"></i>
+              <dt>Tools</dt>
+            </div>
+            <dd>
+              <div class="skill-bars">
+                <div class="skill-item">
+                  <span class="skill-name">Git</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 92%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">GitHub</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 90%"></div>
+                  </div>
+                </div>
+                <div class="skill-item">
+                  <span class="skill-name">VS Code</span>
+                  <div class="skill-bar">
+                    <div class="skill-level" style="width: 95%"></div>
+                  </div>
+                </div>
+              </div>
+            </dd>
+          </div>
+        </div>
       </section>
       
-      <section id="projects-section" class="page-section">
+      <section id="projects-section" class="page-section fade-in">
         <h3>Projects</h3>
         <ul>
           <li class="project">
             <h4>Project 1</h4>
             <figure>
-              <img src="https://picsum.photos/150" alt="Project 1" width="150" height="150">
-              <figcaption>Project 1</figcaption>
+              <img src="https://picsum.photos/id/3/600/400" alt="Project 1" width="600" height="400">
+              <figcaption>Project 1 - Web Application</figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, elit a tempor elementum, metus mi eleifend massa, pretium commodo elit massa id ex. Donec a ultrices erat. Nullam tempor diam eu molestie sagittis. Praesent eu dolor rutrum, tempus quam sit amet, eleifend nisi. Integer eget est vulputate, lobortis est sit amet, tincidunt orci. Ut sodales et leo in lobortis. Donec a fermentum orci. Curabitur in massa in diam tristique convallis nec id lorem. Sed luctus, ex vitae ultricies tristique, sapien felis ultricies augue, vitae consectetur purus orci vel ante. Maecenas tincidunt quam non viverra gravida. Nunc vehicula mattis felis non interdum. Suspendisse placerat facilisis maximus. Vestibulum ut ipsum vel ipsum vulputate tincidunt. Nam lectus tortor, auctor eu magna vel, laoreet viverra neque. </p>
-            <a href="https://github.com/Fxlipe115">Link to the project</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, elit a tempor elementum, metus mi eleifend massa, pretium commodo elit massa id ex. Donec a ultrices erat. Nullam tempor diam eu molestie sagittis.</p>
+            <a href="https://github.com/Fxlipe115" target="_blank"><i class="fab fa-github"></i> View Project</a>
           </li>
           <li class="project">
             <h4>Project 2</h4>
             <figure>
-              <img src="https://picsum.photos/150" alt="Project 2" width="150" height="150">
-              <figcaption>Project 2</figcaption>
+              <img src="https://picsum.photos/id/237/600/400" alt="Project 2" width="600" height="400">
+              <figcaption>Project 2 - Mobile App</figcaption>
             </figure>
-            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, elit a tempor elementum, metus mi eleifend massa, pretium commodo elit massa id ex. Donec a ultrices erat. Nullam tempor diam eu molestie sagittis. Praesent eu dolor rutrum, tempus quam sit amet, eleifend nisi. Integer eget est vulputate, lobortis est sit amet, tincidunt orci. Ut sodales et leo in lobortis. Donec a fermentum orci. Curabitur in massa in diam tristique convallis nec id lorem. Sed luctus, ex vitae ultricies tristique, sapien felis ultricies augue, vitae consectetur purus orci vel ante. Maecenas tincidunt quam non viverra gravida. Nunc vehicula mattis felis non interdum. Suspendisse placerat facilisis maximus. Vestibulum ut ipsum vel ipsum vulputate tincidunt. Nam lectus tortor, auctor eu magna vel, laoreet viverra neque. </p>
-            <a href="">Link to the project</a>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, elit a tempor elementum, metus mi eleifend massa, pretium commodo elit massa id ex. Donec a ultrices erat. Nullam tempor diam eu molestie sagittis.</p>
+            <a href="https://github.com/Fxlipe115" target="_blank"><i class="fab fa-github"></i> View Project</a>
           </li>
           <li class="project">
-            <article>
-              <h4>Project 3</h4>
-              <figure>
-                <img src="https://picsum.photos/150" alt="Project 3" width="150" height="150">
-                <figcaption>Project 3</figcaption>
-              </figure>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, elit a tempor elementum, metus mi eleifend massa, pretium commodo elit massa id ex. Donec a ultrices erat. Nullam tempor diam eu molestie sagittis. Praesent eu dolor rutrum, tempus quam sit amet, eleifend nisi. Integer eget est vulputate, lobortis est sit amet, tincidunt orci. Ut sodales et leo in lobortis. Donec a fermentum orci. Curabitur in massa in diam tristique convallis nec id lorem. Sed luctus, ex vitae ultricies tristique, sapien felis ultricies augue, vitae consectetur purus orci vel ante. Maecenas tincidunt quam non viverra gravida. Nunc vehicula mattis felis non interdum. Suspendisse placerat facilisis maximus. Vestibulum ut ipsum vel ipsum vulputate tincidunt. Nam lectus tortor, auctor eu magna vel, laoreet viverra neque. </p>
-              <a href="">Link to the project</a>
-            </article>
+            <h4>Project 3</h4>
+            <figure>
+              <img src="https://picsum.photos/id/24/600/400" alt="Project 3" width="600" height="400">
+              <figcaption>Project 3 - Data Analysis</figcaption>
+            </figure>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin vestibulum, elit a tempor elementum, metus mi eleifend massa, pretium commodo elit massa id ex. Donec a ultrices erat. Nullam tempor diam eu molestie sagittis.</p>
+            <a href="https://github.com/Fxlipe115" target="_blank"><i class="fab fa-github"></i> View Project</a>
           </li>
         </ul>
       </section>
 
-      <section id="formation-section" class="page-section">
+      <section id="formation-section" class="page-section fade-in">
         <h3>Formation</h3>
-        <div class="main-formation">
-          <dl>
-            <dt>Computer Science</dt>
-            <dd>Federal University of Rio Grande do Sul</dd>
-            <dt>System Analysis and Development</dt>
-            <dd>UNIASSELVI</dd>
-          </dl>
-        </div>
-        <div class="online-courses">
-          <h4>Events and certifications</h4>
-          <ul>
-            <li>JavaScript</li>
-            <li>Python</li>
-            <li>Ruby</li>
-          </ul>
+        <div class="formation-container">
+          <div class="main-formation">
+            <div class="education-item">
+              <i class="fas fa-university"></i>
+              <dt>Computer Science</dt>
+              <dd>Federal University of Rio Grande do Sul</dd>
+            </div>
+            <div class="education-item">
+              <i class="fas fa-laptop-code"></i>
+              <dt>System Analysis and Development</dt>
+              <dd>UNIASSELVI</dd>
+            </div>
+          </div>
+          <div class="online-courses">
+            <h4><i class="fas fa-certificate"></i> Events and Certifications</h4>
+            <ul>
+              <li><i class="fab fa-js"></i> Advanced JavaScript Certification</li>
+              <li><i class="fab fa-python"></i> Python Data Science Specialization</li>
+              <li><i class="fas fa-gem"></i> Ruby on Rails Development</li>
+            </ul>
+          </div>
         </div>
       </section>
 
-      <section id="contact-section" class="page-section">
+      <section id="contact-section" class="page-section fade-in">
         <h3>Contact</h3>
+        <p>Feel free to reach out to me through any of the following channels:</p>
         <ul>
           <li>
-            <a href="mailto:felipegraeff[at]hotmail.com">Email</a>
+            <a href="mailto:felipegraeff[at]hotmail.com"><i class="fas fa-envelope"></i> Email</a>
           </li>
           <li>
-            <a href="linkedin.com/in/felipegraeff">LinkedIn</a>
+            <a href="https://linkedin.com/in/felipegraeff" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
           </li>
           <li>
-            <a href="github.com/Fxlipe115">GitHub</a>
+            <a href="https://github.com/Fxlipe115" target="_blank"><i class="fab fa-github"></i> GitHub</a>
           </li>
         </ul>
       </section>
     </div>
 
     <footer>
-      <p>&copy; 2024 by Felipe Graeff</p>
+      <div class="footer-content">
+        <p>&copy; 2024 by Felipe Graeff | Software Developer</p>
+        <div class="social-links">
+          <a href="https://github.com/Fxlipe115" target="_blank"><i class="fab fa-github"></i></a>
+          <a href="https://linkedin.com/in/felipegraeff" target="_blank"><i class="fab fa-linkedin"></i></a>
+        </div>
+      </div>
     </footer>
   </body>
 </html>
