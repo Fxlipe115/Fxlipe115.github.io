@@ -135,11 +135,11 @@ nav a.active {
     gap: 15px;
 }
 
-.skill-item {
+/* .skill-item {
     display: flex;
     flex-direction: column;
     gap: 5px;
-}
+} */
 
 .skill-name {
     font-weight: 500;
