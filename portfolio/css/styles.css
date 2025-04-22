@@ -15,6 +15,7 @@ html[dir="rtl"] {
     --accent-color: #e74c3c;
     --light-color: #ecf0f1;
     --dark-color: #2c3e50;
+    --header-text-color: #2c3e50;
     --text-color: #333333;
     --background-color: #f9f9f9;
     --card-background: #ffffff;
@@ -22,12 +23,35 @@ html[dir="rtl"] {
     --transition-speed: 0.3s;
     --star-color: #f1c40f;
     --star-inactive: #e0e0e0;
+    --primary-hover: #c0392b;
+    --surface-background: rgba(236, 240, 241, 0.5);
+    --surface-over-background: rgba(236, 240, 241, 0.3);
+}
+
+[data-theme="dark"] {
+    --primary-color: #1f2937;
+    --secondary-color: #3b82f6;
+    --accent-color: #f43f5e;
+    --light-color: #f3f4f6;
+    --dark-color: #111827;
+    --header-text-color: #f3f4f6;
+    --text-color: #e5e7eb;
+    --background-color: #0f172a;
+    --card-background: #1e293b;
+    --shadow-color: rgba(255, 255, 255, 0.05);
+    --primary-hover: #a93226;
+    --surface-background: rgb(18, 26, 39);
+    --surface-over-background: rgba(8, 14, 24, 0.5);
 }
 
 /* Base styles */
 html {
     box-sizing: border-box;
     scroll-behavior: smooth;
+}
+
+* {
+    transition: background-color 0.3s ease, color 0.3s ease;
 }
 
 *, *:before, *:after {
@@ -52,7 +76,7 @@ body {
 h1, h2, h3, h4, h5, h6 {
     font-family: 'Montserrat', 'Segoe UI', Arial, sans-serif;
     margin-top: 0;
-    color: var(--primary-color);
+    color: var(--header-text-color);
 }
 
 h1 {
@@ -216,6 +240,32 @@ nav a:hover {
     transform: translateY(-2px);
 }
 
+.nav-inner {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 1rem;
+}
+
+.nav-controls {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+#theme-toggle {
+    background: none;
+    border: none;
+    cursor: pointer;
+    font-size: 1.3rem;
+    color: var(--light-color);
+    transition: transform 0.2s;
+}
+
+#theme-toggle:hover {
+    transform: scale(1.2);
+}  
+
 #menu-toggle {
     display: none;
     width: 100%;
@@ -370,7 +420,7 @@ dl {
 
 dt {
     font-weight: 700;
-    color: var(--primary-color);
+    color: var(--header-text-color);
     margin-top: 15px;
     font-size: 1.1rem;
 }
@@ -391,7 +441,7 @@ dd {
 
 /* Star Rating System */
 .skills-legend {
-    background-color: rgba(236, 240, 241, 0.5);
+    background-color: var(--surface-background);
     padding: 15px;
     border-radius: 8px;
     margin-bottom: 25px;
@@ -438,7 +488,7 @@ dd {
     justify-content: space-between;
     align-items: center;
     padding: 10px 15px;
-    background-color: rgba(236, 240, 241, 0.3);
+    background-color: var(--surface-over-background);
     border-radius: 6px;
     transition: transform var(--transition-speed), background-color var(--transition-speed);
 }
@@ -482,10 +532,10 @@ dd {
 }
 
 .project h4 {
-    color: var(--primary-color);
+    color: var(--header-text-color);
     margin: 0;
     padding: 15px 20px;
-    background-color: rgba(236, 240, 241, 0.5);
+    background-color: var(--surface-background);
     border-bottom: 2px solid var(--secondary-color);
 }
 
@@ -646,6 +696,14 @@ html[dir="rtl"] .contact-section {
     .legend-item {
         width: 100%;
     }
+
+
+    .nav-controls {
+        position: absolute;
+        top: 10px;
+        right: 10px;
+        flex-direction: row;
+    }
 }
 
 @media screen and (max-width: 500px) {
@@ -653,10 +711,23 @@ html[dir="rtl"] .contact-section {
         position: relative;
     }
 
+    .nav-controls {
+        position: static;
+        justify-content: center;
+        flex-direction: row; /* or column if you want them stacked */
+        margin-top: 10px;
+        display: none;
+    }
+    
+    .footer-theme-toggle {
+        display: block;
+    }
+    
     nav ul {
         flex-direction: column;
-        align-items: stretch;
+        align-items: center;
     }
+
     
     nav li {
         width: 100%;
