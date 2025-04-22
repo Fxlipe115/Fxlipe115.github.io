@@ -4,24 +4,27 @@
   <head>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Felipe Graeff's personal website - Software Developer Portfolio">
-    <title>Felipe Graeff | Software Developer</title>
+    <meta name="description" data-i18n-attr="description:content" content="Felipe Graeff's personal website - Software Developer Portfolio">
+    <title data-i18n="title">Felipe Graeff | Software Developer</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700&family=Roboto:wght@300;400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
     <link rel="stylesheet" type="text/css" href="css/styles.css">
     <link rel="stylesheet" type="text/css" href="css/additional.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/lipis/flag-icons@7.2.3/css/flag-icons.min.css">
+
     <script src="js/script.js" defer></script>
+    <script src="js/i18n.js" defer></script>
   </head>
   <body>
     <header>
       <div class="content-wrapper title">
-        <h1>Felipe Graeff</h1>
-        <h2>Software Developer</h2>
+        <h1 data-i18n="name">Felipe Graeff</h1>
+        <h2 data-i18n="position">Software Developer</h2>
         <div class="header-cta">
-          <a href="#projects-section" class="btn btn-primary">View My Work</a>
-          <a href="#contact-section" class="btn btn-secondary">Get In Touch</a>
+          <a href="#projects-section" class="btn btn-primary" data-i18n="view-my-work-btn">View My Work</a>
+          <a href="#contact-section" class="btn btn-secondary" data-i18n="get-in-touch-btn">Get In Touch</a>
         </div>
       </div>
     </header>
@@ -32,15 +35,32 @@
           <path d="M 5 8 A 2.0002 2.0002 0 1 0 5 12 L 45 12 A 2.0002 2.0002 0 1 0 45 8 L 5 8 z M 5 23 A 2.0002 2.0002 0 1 0 5 27 L 45 27 A 2.0002 2.0002 0 1 0 45 23 L 5 23 z M 5 38 A 2.0002 2.0002 0 1 0 5 42 L 45 42 A 2.0002 2.0002 0 1 0 45 38 L 5 38 z"></path>
         </svg>
       </button>
+      <button id="language-toggle" aria-expanded="false" aria-label="Toggle language menu">
+        🌐
+      </button>
       <ul>
-        <li><a href="#about-me-section"><i class="fas fa-user"></i> About Me</a></li>
-        <li><a href="#interests-section"><i class="fas fa-lightbulb"></i> Interests</a></li>
-        <li><a href="#skills-section"><i class="fas fa-code"></i> Skills</a></li>
-        <li><a href="#projects-section"><i class="fas fa-project-diagram"></i> Projects</a></li>
-        <li><a href="#formation-section"><i class="fas fa-graduation-cap"></i> Formation</a></li>
-        <li><a href="#languages-section"><i class="fas fa-language"></i> Languages</a></li>
-        <li><a href="#contact-section"><i class="fas fa-envelope"></i> Contact</a></li>
+        <li><a href="#about-me-section"><i class="fas fa-user"></i> <span data-i18n="about-me-title">About Me</span></a></li>
+        <li><a href="#interests-section"><i class="fas fa-lightbulb"></i> <span data-i18n="interests-title">Interests</span></a></li>
+        <li><a href="#skills-section"><i class="fas fa-code"></i> <span data-i18n="skills-title">Skills</span></a></li>
+        <li><a href="#projects-section"><i class="fas fa-project-diagram"></i> <span data-i18n="projects-title">Projects</span></a></li>
+        <li><a href="#formation-section"><i class="fas fa-graduation-cap"></i> <span data-i18n="formation-title">Formation</span></a></li>
+        <li><a href="#languages-section"><i class="fas fa-language"></i> <span data-i18n="languages-title">Languages</span></a></li>
+        <li><a href="#contact-section"><i class="fas fa-envelope"></i> <span data-i18n="contact-title">Contact</span></a></li>
       </ul>
+
+      <div class="language-dropdown" id="language-dropdown">
+        <button id="selected-flag" aria-haspopup="true" aria-expanded="false"><span class="fi fi-gb"></span></button>
+        <ul id="flag-options" class="hidden">
+          <li data-lang="pt-br"><span class="fi fi-br" title="Português (Brasil)"></span></li>
+          <li data-lang="en-gb"><span class="fi fi-gb" title="English (UK)"></span></li>
+          <li data-lang="es"><span class="fi fi-es" title="Español"></span></li>
+          <li data-lang="ja"><span class="fi fi-jp" title="日本語"></span></li>
+          <li data-lang="fr"><span class="fi fi-fr" title="Français"></span></li>
+          <li data-lang="ca"><span class="fi fi-es-ct" title="Català"></span></li>
+          <li data-lang="de"><span class="fi fi-de" title="Deutsch"></span></li>
+          <li data-lang="ar"><span class="fi fi-sa" title="العربية"></span></li>
+        </ul>
+      </div>      
     </nav>
 
     <div class="content-wrapper">
@@ -614,7 +634,7 @@
         <div class="skills-container">
           <div class="skill-list">
             <div class="skill-item">
-              <span class="skill-name"><img src="https://flagcdn.com/w40/br.png" alt="BR" style="width: 20px; vertical-align: middle;"> Portuguese</span>
+              <span class="skill-name"><span class="fi fi-br"></span><span> Portuguese</span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -624,7 +644,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><img src="https://flagcdn.com/w40/gb.png" alt="EN" style="width: 20px; vertical-align: middle;"> English</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-gb"></span> English</span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -634,7 +654,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><img src="https://flagcdn.com/w40/es.png" alt="ES" style="width: 20px; vertical-align: middle;"> Spanish</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-es"></span> Spanish</span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -644,7 +664,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><img src="https://flagcdn.com/w40/jp.png" alt="JP" style="width: 20px; vertical-align: middle;"> Japanese</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-jp"></span> Japanese</span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -654,7 +674,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><img src="https://flagcdn.com/w40/fr.png" alt="FR" style="width: 20px; vertical-align: middle;"> French</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-fr"></span> French</span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -664,7 +684,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><img src="https://flagcdn.com/w40/ad.png" alt="CA" style="width: 20px; vertical-align: middle;"> Catalan</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-es-ct"></span> Catalan</span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -674,7 +694,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><img src="https://flagcdn.com/w40/de.png" alt="DE" style="width: 20px; vertical-align: middle;"> German</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-de"></span> German</span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -684,7 +704,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><img src="https://flagcdn.com/w40/sa.png" alt="AR" style="width: 20px; vertical-align: middle;"> Arabic</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-sa"></span> Arabic</span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>

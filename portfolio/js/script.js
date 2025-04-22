@@ -3,6 +3,10 @@ document.addEventListener('DOMContentLoaded', function() {
     // Mobile menu toggle
     if (window.innerWidth <= 500) {
         document.querySelector('nav ul').classList.add('hidden');
+        document.querySelector('#language-toggle').classList.remove('hidden');
+    } else {
+        document.querySelector('nav ul').classList.remove('hidden');
+        document.querySelector('#language-toggle').classList.add('hidden');
     }
 
     document.querySelector('#menu-toggle').addEventListener('click', () => {
@@ -18,10 +22,31 @@ document.addEventListener('DOMContentLoaded', function() {
     window.addEventListener('resize', () => {
         if (window.innerWidth > 500) {
             document.querySelector('nav ul').classList.remove('hidden');
+            document.querySelector('#language-toggle').classList.add('hidden');
         } else {
             document.querySelector('nav ul').classList.add('hidden');
+            document.querySelector('#language-toggle').classList.remove('hidden');
         }
     });
+
+    // --- Language Toggle (Mobile Only) ---
+    const languageToggle = document.getElementById('language-toggle');
+    const languageDropdown = document.querySelector('.language-dropdown');
+
+    if (languageToggle && languageDropdown) {
+        languageToggle.addEventListener('click', () => {
+        const isVisible = languageDropdown.classList.toggle('visible');
+        languageToggle.setAttribute('aria-expanded', isVisible ? 'true' : 'false');
+        });
+
+        // Hide language menu if clicking outside
+        document.addEventListener('click', (e) => {
+        if (!languageDropdown.contains(e.target) && !languageToggle.contains(e.target)) {
+            languageDropdown.classList.remove('visible');
+            languageToggle.setAttribute('aria-expanded', 'false');
+        }
+        });
+    }
 
     // Smooth scrolling for anchor links
     document.querySelectorAll('a[href^="#"]').forEach(anchor => {
