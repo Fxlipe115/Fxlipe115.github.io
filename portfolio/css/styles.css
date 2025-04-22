@@ -171,27 +171,23 @@ header::before {
 
 /* Navigation */
 nav {
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-    box-shadow: 0 2px 10px var(--shadow-color);
     display: flex;
     align-items: center;
     justify-content: space-between;
-    flex-wrap: wrap;
+    padding: 0 1rem;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
     background-color: var(--primary-color);
-
 }
 
 nav ul {
-    background-color: var(--primary-color);
-    padding: 0;
-    margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    transition: all var(--transition-speed);
-    align-items: center;
+    flex-grow: 1;
+    margin: 0;
+    padding: 0;
 }
 
 html[dir="rtl"] nav ul {
@@ -271,8 +267,10 @@ nav a:hover {
 }
 
 .language-dropdown {
+    margin-inline-start: auto;
+    display: flex;
+    align-items: center;
     position: relative;
-    margin-right: 20px;
 }
 
 .language-dropdown button {
