@@ -33,6 +33,7 @@ function getBrowserLanguage() {
 
 
 function applyTranslations(translations) {
+  
   document.querySelectorAll('[data-i18n]').forEach(el => {
     const key = el.getAttribute('data-i18n');
     if (translations[key]) {
@@ -47,6 +48,15 @@ function applyTranslations(translations) {
     }
   });
 
+  document.querySelectorAll('[data-i18n-paragraphs]').forEach(el => {
+    const key = el.getAttribute('data-i18n-paragraphs');
+    const paragraphs = translations[key];
+    if (Array.isArray(paragraphs)) {
+      el.innerHTML = paragraphs.map(text => `<p>${text}</p>`).join('');
+    }
+  });
+  
+
   if (translations.title) {
     document.title = translations.title;
   }
@@ -58,6 +68,7 @@ function loadLanguage(language) {
     .then(translations => {
       applyTranslations(translations);
       document.documentElement.lang = language;
+      document.documentElement.dir = (language === 'ar') ? 'rtl' : 'ltr';
     })
     .catch(() => {
       console.warn(`Could not load language: ${language}`);

@@ -65,9 +65,9 @@
 
     <div class="content-wrapper">
       <main id="about-me-section" class="page-section fade-in">
-          <h3>About Me</h3>
+          <h3 data-i18n="about-me-title">About Me</h3>
           <div class="about-content">
-            <div class="about-text">
+            <div class="about-text" data-i18n-paragraphs="about-me-text">
               <p>Hi! I'm Felipe, a backend-focused software developer with a strong foundation in computer science and a passion for building scalable, secure, and impactful systems. I enjoy working on open-source projects and integrating backend services with real-world applications.</p>
               <p>My experience spans from cloud-based microservices to research-driven projects in cryptography and secure data storage. I thrive in collaborative environments and enjoy building tools that make a difference in the way people interact with technology.</p>
               <p>I'm continuously exploring ways to align my technical skills with meaningful challenges, whether in education, infrastructure, or product development. I value clean code, thoughtful architecture, and the opportunity to learn and grow with a great team.</p>
@@ -76,40 +76,40 @@
       </main>
       
       <section id="interests-section" class="page-section fade-in">
-        <h3>Interests</h3>
+        <h3 data-i18n="interests-title">Interests</h3>
         <div class="interests-grid">
           <div class="interest-item">
             <i class="fas fa-code-branch"></i>
-            <dt>Distributed Systems</dt>
-            <dd>Designing and building scalable, service-oriented architectures for real-world applications.</dd>
+            <dt data-i18n="interests-distributed-title">Distributed Systems</dt>
+            <dd data-i18n="interests-distributed-desc">Designing and building scalable, service-oriented architectures for real-world applications.</dd>
           </div>
           <div class="interest-item">
             <i class="fas fa-shield-alt"></i>
-            <dt>Security & Cryptography</dt>
-            <dd>Exploring secure data storage, encryption schemes, and privacy-first API designs.</dd>
+            <dt data-i18n="interests-security-title">Security & Cryptography</dt>
+            <dd data-i18n="interests-security-desc">Exploring secure data storage, encryption schemes, and privacy-first API designs.</dd>
           </div>
           <div class="interest-item">
             <i class="fas fa-microchip"></i>
-            <dt>Automation & IoT</dt>
-            <dd>Working with microcontrollers, home automation, and hardware-software integration using tools like Arduino.</dd>
+            <dt data-i18n="interests-iot-title">Automation & IoT</dt>
+            <dd data-i18n="interests-iot-desc">Working with microcontrollers, home automation, and hardware-software integration using tools like Arduino.</dd>
           </div>
           <div class="interest-item">
             <i class="fas fa-globe"></i>
-            <dt>Languages & Communication</dt>
-            <dd>Studying natural languages and how people and systems communicate across cultures and platforms.</dd>
+            <dt data-i18n="interests-languages-title">Languages & Communication</dt>
+            <dd data-i18n="interests-languages-desc">Studying natural languages and how people and systems communicate across cultures and platforms.</dd>
           </div>
           <div class="interest-item">
             <i class="fas fa-users"></i>
-            <dt>Collaborative Development</dt>
-            <dd>Contributing to shared codebases, improving tooling, and building solutions as a team.</dd>
+            <dt data-i18n="interests-collab-title">Collaborative Development</dt>
+            <dd data-i18n="interests-collab-desc">Contributing to shared codebases, improving tooling, and building solutions as a team.</dd>
           </div>
         </div>
-      </section>
+      </section>      
     
       <section id="skills-section" class="page-section fade-in">
-        <h3>Skills</h3>
+        <h3 data-i18n="skills-title">Skills</h3>
         <div class="skills-legend">
-          <p>Skill Level: </p>
+          <p data-i18n="skills-level-label">Skill Level: </p>
           <div class="legend-item">
             <div class="star-rating">
               <i class="fas fa-star"></i>
@@ -118,7 +118,7 @@
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <span>Beginner</span>
+            <span data-i18n="skill-level-beginner">Beginner</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
@@ -128,7 +128,7 @@
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <span>Elementary</span>
+            <span data-i18n="skill-level-elementary">Elementary</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
@@ -138,7 +138,7 @@
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <span>Intermediate</span>
+            <span data-i18n="skill-level-intermediate">Intermediate</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
@@ -148,7 +148,7 @@
               <i class="fas fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <span>Advanced</span>
+            <span data-i18n="skill-level-advanced">Advanced</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
@@ -158,7 +158,7 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <span>Expert</span>
+            <span data-i18n="skill-level-expert">Expert</span>
           </div>
         </div>
 
@@ -166,7 +166,7 @@
           <div class="skill-category">
             <div class="skill-header">
               <i class="fas fa-code"></i>
-              <dt>Languages</dt>
+              <dt data-i18n="skill-category-programming-languages">Programming Languages</dt>
             </div>
             <dd>
               <div class="skill-list">
@@ -222,7 +222,6 @@
                     <i class="far fa-star"></i>
                   </div>
                 </div>
-                <!--intermediate java-->
                 <div class="skill-item">
                   <span class="skill-name">
                     <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
@@ -269,7 +268,7 @@
           <div class="skill-category">
             <div class="skill-header">
               <i class="fas fa-laptop-code"></i>
-              <dt>Frameworks & Libraries</dt>
+              <dt data-i18n="skill-category-frameworks">Frameworks & Libraries</dt>
             </div>
             <dd>
               <div class="skill-list">
@@ -319,7 +318,7 @@
           <div class="skill-category">
             <div class="skill-header">
               <i class="fas fa-server"></i>
-              <dt>Databases & Cloud</dt>
+              <dt data-i18n="skill-category-databases">Databases & Cloud</dt>
             </div>
             <dd>
               <div class="skill-list">
@@ -395,7 +394,7 @@
           <div class="skill-category">
             <div class="skill-header">
               <i class="fas fa-tools"></i>
-              <dt>Tools & Workflow</dt>
+              <dt data-i18n="skill-category-tools">Tools & Workflow</dt>
             </div>
             <dd>
               <div class="skill-list">
@@ -472,113 +471,113 @@
       
       
       <section id="projects-section" class="page-section fade-in">
-        <h3>Projects</h3>
+        <h3 data-i18n="projects-title">Projects</h3>
         <ul>
           <li class="project">
-            <h4>MA-ABE Secure API</h4>
+            <h4 data-i18n="project-maabe-title">MA-ABE Secure API</h4>
             <figure>
               <img src="img/hacker.jpg" alt="MA-ABE Project" width="600" height="400">
-              <figcaption>Cryptographic API built with Flask and Charm-Crypto</figcaption>
+              <figcaption data-i18n="project-maabe-caption">Cryptographic API built with Flask and Charm-Crypto</figcaption>
             </figure>
-            <p>A hybrid encryption system that combines Multi-Authority Attribute-Based Encryption (MA-ABE) with AES, designed for secure storage of health-related IoT data. Includes key management with Redis, and performance evaluation with Locust.</p>
-            <a href="https://github.com/Fxlipe115/ma-abe-flask" target="_blank"><i class="fab fa-github"></i> View Project</a>
+            <p data-i18n="project-maabe-desc">A hybrid encryption system that combines Multi-Authority Attribute-Based Encryption (MA-ABE) with AES, designed for secure storage of health-related IoT data. Includes key management with Redis, and performance evaluation with Locust.</p>
+            <a href="https://github.com/Fxlipe115/ma-abe-flask" target="_blank"><i class="fab fa-github"></i> <span data-i18n="view-project-btn">View Project</span></a>
           </li>
           <li class="project">
-            <h4>Cryptocurrency Exchange Platform</h4>
+            <h4 data-i18n="project-crypto-title">Cryptocurrency Exchange Platform</h4>
             <figure>
               <img src="img/crypto.jpg" alt= "3 coins with the symbols of Bitcoin, Ethereum and Ripple" width="600" height="400">
-              <figcaption>Microservice-based exchange platform</figcaption>
+              <figcaption data-i18n="project-crypto-caption">Microservice-based exchange platform</figcaption>
             </figure>
-            <p>Developed backend services for a crypto asset exchange platform, focusing on secure user authentication with AWS Cognito, transaction processing, and API Gateway integration. The platform also integrates with third-party services such as CoinPayments for transactions. Deployed using Amazon ECS.</p>
-            <!-- <a href="https://github.com/Fxlipe115" target="_blank"><i class="fab fa-github"></i> View Project</a> -->
+            <p data-i18n="project-crypto-desc">Developed backend services for a crypto asset exchange platform, focusing on secure user authentication with AWS Cognito, transaction processing, and API Gateway integration. The platform also integrates with third-party services such as CoinPayments for transactions. Deployed using Amazon ECS.</p>
+            <!-- <a href="https://github.com/Fxlipe115" target="_blank"><i class="fab fa-github"></i> <span data-i18n="view-project-btn">View Project</span></a> -->
           </li>
           <li class="project">
-            <h4>IoT Home Automation</h4>
+            <h4 data-i18n="project-iot-title">IoT Home Automation</h4>
             <figure>
               <img src="img/smartswitch.jpg" alt="A wall with a smart switch on it" width="600" height="400">
-              <figcaption>Arduino-based home automation system</figcaption>
+              <figcaption data-i18n="project-iot-caption">Arduino-based home automation system</figcaption>
             </figure>
-            <p>Developed a Wi-Fi-enabled electric switch using Arduino and ESP8266, connected to a relay module for controlling lights and appliances remotely. Includes a web interface and MQTT integration for real-time communication and monitoring.</p>
-            <a href="https://github.com/Fxlipe115/wifi_switch" target="_blank"><i class="fab fa-github"></i> View Project</a>
+            <p data-i18n="project-iot-desc">Developed a Wi-Fi-enabled electric switch using Arduino and ESP8266, connected to a relay module for controlling lights and appliances remotely. Includes a web interface and MQTT integration for real-time communication and monitoring.</p>
+            <a href="https://github.com/Fxlipe115/wifi_switch" target="_blank"><i class="fab fa-github"></i> <span data-i18n="view-project-btn">View Project</span></a>
           </li>
           <li class="project">
-            <h4>CThread</h4>
+            <h4 data-i18n="project-cthread-title">CThread</h4>
             <figure>
               <img src="img/multithread.jpg" alt="Computer screen showing multiple programs running simultaneouly" width="600" height="400">
-              <figcaption>Basic thread library for C</figcaption>
+              <figcaption data-i18n="project-cthread-caption">Basic thread library for C</figcaption>
             </figure>
-            <p>A library similar to PThreads for use with the C programming language. Developed as part of the Operating Systems course, it provides basic functionality for thread creation and synchronization.</p>
-            <a href="https://github.com/Fxlipe115/cthread" target="_blank"><i class="fab fa-github"></i> View Project</a>
+            <p data-i18n="project-cthread-desc">A library similar to PThreads for use with the C programming language. Developed as part of the Operating Systems course, it provides basic functionality for thread creation and synchronization.</p>
+            <a href="https://github.com/Fxlipe115/cthread" target="_blank"><i class="fab fa-github"></i> <span data-i18n="view-project-btn">View Project</span></a>
           </li>
           <li class="project">
-            <h4>CapyBot</h4>
+            <h4 data-i18n="project-capybot-title">CapyBot</h4>
             <figure>
               <img src="img/capybara.webp" alt="A capybara sitting at a desk with a computer" width="600" height="400">
-              <figcaption>A friendly capybara themed AI assistant for Slack</figcaption>
+              <figcaption data-i18n="project-capybot-caption">A friendly capybara themed AI assistant for Slack</figcaption>
             </figure>
-            <p>A Slack app integrating with the OpenAI API, allowing the team to interact with a helpful capybara-themed AI companion. Used for assistance with tasks, idea generation, or just passing the time while waiting for deployments.</p>
-            <a href="https://github.com/Fxlipe115/CapyBot" target="_blank"><i class="fab fa-github"></i> View Project</a>
+            <p data-i18n="project-capybot-desc">A Slack app integrating with the OpenAI API, allowing the team to interact with a helpful capybara-themed AI companion. Used for assistance with tasks, idea generation, or just passing the time while waiting for deployments.</p>
+            <a href="https://github.com/Fxlipe115/CapyBot" target="_blank"><i class="fab fa-github"></i> <span data-i18n="view-project-btn">View Project</span></a>
           </li>
           <li class="project">
-            <h4>Shrek vs Battleships game</h4>
+            <h4 data-i18n="project-shrek-title">Shrek vs Battleships game</h4>
             <figure>
               <img src="img/shrek.png" alt="Locust Performance Testing" width="600" height="400">
-              <figcaption>A game where Shrek must face against a fleet of battleships</figcaption>
+              <figcaption data-i18n="project-shrek-caption">A game where Shrek must face against a fleet of battleships</figcaption>
             </figure>
-            <p>A small game developed entirely in OpenGL to demonstrate core computer graphics concepts such as lighting, shaders, textures, collision detection, and Bezier curves. Created as part of a university computer graphics course.</p>
-            <a href="https://github.com/Fxlipe115/fcg-2020-1-final" target="_blank"><i class="fab fa-github"></i> View Project</a>
+            <p data-i18n="project-shrek-desc">A small game developed entirely in OpenGL to demonstrate core computer graphics concepts such as lighting, shaders, textures, collision detection, and Bezier curves. Created as part of a university computer graphics course.</p>
+            <a href="https://github.com/Fxlipe115/fcg-2020-1-final" target="_blank"><i class="fab fa-github"></i> <span data-i18n="view-project-btn">View Project</span></a>
           </li>
           <li class="project">
-            <h4>Mini Compiler</h4>
+            <h4 data-i18n="project-compiler-title">Mini Compiler</h4>
             <figure>
               <img src="img/compiler.jpg" alt="Mini Compiler Project" width="600" height="400">
-              <figcaption>A compiler built with Lex and Yacc</figcaption>
+              <figcaption data-i18n="project-compiler-caption">A compiler built with Lex and Yacc</figcaption>
             </figure>
-            <p>Developed a compiler for a custom fictional language as part of the Compilers course. The project demonstrates key concepts such as lexical analysis and syntax parsing using Lex and Yacc, and includes a symbol table and error handling mechanisms.</p>
-            <a href="https://github.com/Fxlipe115/compiler" target="_blank"><i class="fab fa-github"></i> View Project</a>
+            <p data-i18n="project-compiler-desc">Developed a compiler for a custom fictional language as part of the Compilers course. The project demonstrates key concepts such as lexical analysis and syntax parsing using Lex and Yacc, and includes a symbol table and error handling mechanisms.</p>
+            <a href="https://github.com/Fxlipe115/compiler" target="_blank"><i class="fab fa-github"></i> <span data-i18n="view-project-btn">View Project</span></a>
           </li>
           <li class="project">
-            <h4>Snake</h4>
+            <h4 data-i18n="project-snake-title">Snake</h4>
             <figure>
               <img src="img/snake.png" alt="Locust Performance Testing" width="600" height="400">
-              <figcaption>The classic cellphone game, now in your terminal</figcaption>
+              <figcaption data-i18n="project-snake-caption">The classic cellphone game, now in your terminal</figcaption>
             </figure>
-            <p>A terminal-based implementation of the Snake game written in C, using the curses library for input handling and display. Designed for practicing low-level UI control and game loop mechanics.</p>
-            <a href="https://github.com/Fxlipe115/Snake" target="_blank"><i class="fab fa-github"></i> View Project</a>
+            <p data-i18n="project-snake-desc">A terminal-based implementation of the Snake game written in C, using the curses library for input handling and display. Designed for practicing low-level UI control and game loop mechanics.</p>
+            <a href="https://github.com/Fxlipe115/Snake" target="_blank"><i class="fab fa-github"></i> <span data-i18n="view-project-btn">View Project</span></a>
           </li>
         </ul>
       </section>
 
       <section id="formation-section" class="page-section fade-in">
-        <h3>Formation</h3>
+        <h3 data-i18n="formation-title">Formation</h3>
         <div class="formation-container">
           <div class="main-formation">
             <div class="education-item">
               <i class="fas fa-university"></i>
-              <dt>Computer Science</dt>
-              <dd>Federal University of Rio Grande do Sul</dd>
+              <dt data-i18n="formation-course-cs">Computer Science</dt>
+              <dd data-i18n="formation-uni-ufrgs">Federal University of Rio Grande do Sul</dd>
             </div>
             <div class="education-item">
               <i class="fas fa-laptop-code"></i>
-              <dt>System Analysis and Development</dt>
-              <dd>UNIASSELVI</dd>
+              <dt data-i18n="formation-course-sad">System Analysis and Development</dt>
+              <dd data-i18n="formation-uni-uniaselvi">UNIASSELVI</dd>
             </div>
           </div>
           <div class="online-courses">
-            <h4><i class="fas fa-certificate"></i> Events and Certifications</h4>
+            <h4><i class="fas fa-certificate"></i> <span data-i18n="formation-certifications-title">Events and Certifications</span></h4>
             <ul>
-              <li><i class="fab fa-js"></i> Advanced JavaScript Certification</li>
-              <li><i class="fab fa-python"></i> Python Data Science Specialization</li>
-              <li><i class="fas fa-gem"></i> Ruby on Rails Development</li>
+              <li><i class="fab fa-js"></i> <span data-i18n="formation-cert-js">Advanced JavaScript Certification</span></li>
+              <li><i class="fab fa-python"></i> <span data-i18n="formation-cert-python">Python Data Science Specialization</span></li>
+              <li><i class="fas fa-gem"></i> <span data-i18n="formation-cert-ruby">Ruby on Rails Development</span></li>
             </ul>
           </div>
         </div>
       </section>
-
+      
       <section id="languages-section" class="page-section fade-in">
         <h3>Languages</h3>
         <div class="skills-legend">
-          <p>Skill Level: </p>
+          <p data-i18n="languages-level-label">Proficiency Level: </p>
           <div class="legend-item">
             <div class="star-rating">
               <i class="fas fa-star"></i>
@@ -587,7 +586,7 @@
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <span>Beginner</span>
+            <span data-i18n="language-level-beginner">Beginner</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
@@ -597,7 +596,7 @@
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <span>Elementary</span>
+            <span data-i18n="language-level-elementary">Elementary</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
@@ -607,7 +606,7 @@
               <i class="far fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <span>Intermediate</span>
+            <span data-i18n="language-level-intermediate">Intermediate</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
@@ -617,7 +616,7 @@
               <i class="fas fa-star"></i>
               <i class="far fa-star"></i>
             </div>
-            <span>Advanced</span>
+            <span data-i18n="language-level-advanced">Advanced</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
@@ -627,14 +626,14 @@
               <i class="fas fa-star"></i>
               <i class="fas fa-star"></i>
             </div>
-            <span>Fluent</span>
+            <span data-i18n="language-level-fluent">Fluent</span>
           </div>
         </div>
 
         <div class="skills-container">
           <div class="skill-list">
             <div class="skill-item">
-              <span class="skill-name"><span class="fi fi-br"></span><span> Portuguese</span>
+              <span class="skill-name"><span class="fi fi-br"></span> <span data-i18n="lang-portuguese">Portuguese</span></span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -644,7 +643,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-gb"></span> English</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-gb"></span> <span data-i18n="lang-english">English</span></span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -654,7 +653,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-es"></span> Spanish</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-es"></span> <span data-i18n="lang-spanish">Spanish</span></span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -664,7 +663,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-jp"></span> Japanese</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-jp"></span> <span data-i18n="lang-japanese">Japanese</span></span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -674,7 +673,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-fr"></span> French</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-fr"></span> <span data-i18n="lang-french">French</span></span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -684,7 +683,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-es-ct"></span> Catalan</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-es-ct"></span> <span data-i18n="lang-catalan">Catalan</span></span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -694,7 +693,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-de"></span> German</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-de"></span> <span data-i18n="lang-german">German</span></span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="fas fa-star"></i>
@@ -704,7 +703,7 @@
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-sa"></span> Arabic</span>
+              <span class="skill-name"><span class="skill-name"><span class="fi fi-sa"></span> <span data-i18n="lang-arabic">Arabic</span></span>
               <div class="star-rating">
                 <i class="fas fa-star"></i>
                 <i class="far fa-star"></i>
@@ -718,31 +717,31 @@
       </section>
 
       <section id="contact-section" class="page-section fade-in">
-        <h3>Contact</h3>
-        <p>Feel free to reach out to me through any of the following channels:</p>
+        <h3 data-i18n="contact-title">Contact</h3>
+        <p data-i18n="contact-description">Feel free to reach out to me through any of the following channels:</p>
         <ul>
           <li>
-            <a href="mailto:felipegraeff[at]hotmail.com"><i class="fas fa-envelope"></i> Email</a>
+            <a href="mailto:felipegraeff[at]hotmail.com"><i class="fas fa-envelope"></i> <span data-i18n="contact-email">Email</span></a>
           </li>
           <li>
-            <a href="https://linkedin.com/in/felipegraeff" target="_blank"><i class="fab fa-linkedin"></i> LinkedIn</a>
+            <a href="https://linkedin.com/in/felipegraeff" target="_blank"><i class="fab fa-linkedin"></i> <span data-i18n="contact-linkedin">LinkedIn</span></a>
           </li>
           <li>
-            <a href="https://github.com/Fxlipe115" target="_blank"><i class="fab fa-github"></i> GitHub</a>
+            <a href="https://github.com/Fxlipe115" target="_blank"><i class="fab fa-github"></i> <span data-i18n="contact-github">GitHub</span></a>
           </li>
         </ul>
-      </section>
+      </section>      
     </div>
     
 
     <footer>
       <div class="footer-content">
-        <p>&copy; 2024 by Felipe Graeff | Software Developer</p>
+        <p data-i18n="footer-text">&copy; 2024 by Felipe Graeff | Software Developer</p>
         <div class="social-links">
           <a href="https://github.com/Fxlipe115" target="_blank"><i class="fab fa-github"></i></a>
           <a href="https://linkedin.com/in/felipegraeff" target="_blank"><i class="fab fa-linkedin"></i></a>
         </div>
       </div>
-    </footer>
+    </footer>    
   </body>
 </html>

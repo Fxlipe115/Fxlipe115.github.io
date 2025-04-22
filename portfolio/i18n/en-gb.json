@@ -5,11 +5,120 @@
   "position": "Software Developer",
   "view-my-work-btn": "View my work",
   "get-in-touch-btn": "Contact me",
+  
+  
   "about-me-title": "About me",
+  "about-me-text": [
+    "Hi! I'm Felipe, a backend-focused software developer with a strong foundation in computer science and a passion for building scalable, secure, and impactful systems. I enjoy working on open-source projects and integrating backend services with real-world applications.",
+    "My experience spans from cloud-based microservices to research-driven projects in cryptography and secure data storage. I thrive in collaborative environments and enjoy building tools that make a difference in the way people interact with technology",
+    "I'm continuously exploring ways to align my technical skills with meaningful challenges, whether in education, infrastructure, or product development. I value clean code, thoughtful architecture, and the opportunity to learn and grow with a great team."
+  ],
+  
+  
   "interests-title": "Interests",
+  
+  "interests-distributed-title": "Distributed Systems",
+  "interests-distributed-desc": "Designing and building scalable, service-oriented architectures for real-world applications.",
+  
+  "interests-security-title": "Security & Cryptography",
+  "interests-security-desc": "Exploring secure data storage, encryption schemes, and privacy-first API designs.",
+  
+  "interests-iot-title": "Automation & IoT",
+  "interests-iot-desc": "Working with microcontrollers, home automation, and hardware-software integration using tools like Arduino.",
+  
+  "interests-languages-title": "Languages & Communication",
+  "interests-languages-desc": "Studying natural languages and how people and systems communicate across cultures and platforms.",
+  
+  "interests-collab-title": "Collaborative Development",
+  "interests-collab-desc": "Contributing to shared codebases, improving tooling, and building solutions as a team.",
+  
+  
   "skills-title": "Skills",
+  
+  "skills-level-label": "Skill Level:",
+  "skill-level-beginner": "Beginner",
+  "skill-level-elementary": "Elementary",
+  "skill-level-intermediate": "Intermediate",
+  "skill-level-advanced": "Advanced",
+  "skill-level-expert": "Expert",
+  
+  "skill-category-programming-languages": "Programming Languages",
+  "skill-category-frameworks": "Frameworks & Libraries",
+  "skill-category-databases": "Databases & Cloud",
+  "skill-category-tools": "Tools & Workflow",
+  
+  
   "projects-title": "Projects",
+  "view-project-btn": "View Project",
+
+  "project-maabe-title": "MA-ABE Secure API",
+  "project-maabe-caption": "Cryptographic API built with Flask and Charm-Crypto",
+  "project-maabe-desc": "A hybrid encryption system that combines Multi-Authority Attribute-Based Encryption (MA-ABE) with AES, designed for secure storage of health-related IoT data. Includes key management with Redis, and performance evaluation with Locust.",
+
+  "project-crypto-title": "Cryptocurrency Exchange Platform",
+  "project-crypto-caption": "Microservice-based exchange platform",
+  "project-crypto-desc": "Developed backend services for a crypto asset exchange platform, focusing on secure user authentication with AWS Cognito, transaction processing, and API Gateway integration. The platform also integrates with third-party services such as CoinPayments for transactions. Deployed using Amazon ECS.",
+
+  "project-iot-title": "IoT Home Automation",
+  "project-iot-caption": "Arduino-based home automation system",
+  "project-iot-desc": "Developed a Wi-Fi-enabled electric switch using Arduino and ESP8266, connected to a relay module for controlling lights and appliances remotely. Includes a web interface and MQTT integration for real-time communication and monitoring.",
+
+  "project-cthread-title": "CThread",
+  "project-cthread-caption": "Basic thread library for C",
+  "project-cthread-desc": "A library similar to PThreads for use with the C programming language. Developed as part of the Operating Systems course, it provides basic functionality for thread creation and synchronization.",
+
+  "project-capybot-title": "CapyBot",
+  "project-capybot-caption": "A friendly capybara themed AI assistant for Slack",
+  "project-capybot-desc": "A Slack app integrating with the OpenAI API, allowing the team to interact with a helpful capybara-themed AI companion. Used for assistance with tasks, idea generation, or just passing the time while waiting for deployments.",
+
+  "project-shrek-title": "Shrek vs Battleships game",
+  "project-shrek-caption": "A game where Shrek must face against a fleet of battleships",
+  "project-shrek-desc": "A small game developed entirely in OpenGL to demonstrate core computer graphics concepts such as lighting, shaders, textures, collision detection, and Bezier curves. Created as part of a university computer graphics course.",
+
+  "project-compiler-title": "Mini Compiler",
+  "project-compiler-caption": "A compiler built with Lex and Yacc",
+  "project-compiler-desc": "Developed a compiler for a custom fictional language as part of the Compilers course. The project demonstrates key concepts such as lexical analysis and syntax parsing using Lex and Yacc, and includes a symbol table and error handling mechanisms.",
+
+  "project-snake-title": "Snake",
+  "project-snake-caption": "The classic cellphone game, now in your terminal",
+  "project-snake-desc": "A terminal-based implementation of the Snake game written in C, using the curses library for input handling and display. Designed for practicing low-level UI control and game loop mechanics.",
+  
   "formation-title": "Formation",
+  "formation-course-cs": "Computer Science",
+  "formation-uni-ufrgs": "Federal University of Rio Grande do Sul",
+  "formation-course-sad": "System Analysis and Development",
+  "formation-uni-uniaselvi": "UNIASSELVI",
+  
+  "formation-certifications-title": "Events and Certifications",
+  "formation-cert-js": "Advanced JavaScript Certification",
+  "formation-cert-python": "Python Data Science Specialization",
+  "formation-cert-ruby": "Ruby on Rails Development",
+  
+
   "languages-title": "Languages",
-  "contact-title": "Contact"
+
+  "languages-level-label": "Proficiency Level:",
+  "language-level-beginner": "Beginner",
+  "language-level-elementary": "Elementary",
+  "language-level-intermediate": "Intermediate",
+  "language-level-advanced": "Advanced",
+  "language-level-fluent": "Fluent",
+
+  "lang-portuguese": "Portuguese",
+  "lang-english": "English",
+  "lang-spanish": "Spanish",
+  "lang-japanese": "Japanese",
+  "lang-french": "French",
+  "lang-catalan": "Catalan",
+  "lang-german": "German",
+  "lang-arabic": "Arabic",
+
+  
+  "contact-title": "Contact",
+  "contact-description": "Feel free to reach out to me through any of the following channels:",
+  "contact-email": "Email",
+  "contact-linkedin": "LinkedIn",
+  "contact-github": "GitHub",
+
+  "footer-text": "© 2024 by Felipe Graeff | Software Developer"
 }

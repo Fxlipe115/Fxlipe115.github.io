@@ -1,3 +1,9 @@
+/* Reverse text direction for Arabic */
+html[dir="rtl"] {
+    direction: rtl;
+    text-align: right;
+} 
+
 .hidden {
     display: none !important;
 }
@@ -72,13 +78,21 @@ h3 {
 h3::after {
     content: '';
     position: absolute;
-    left: 0;
     bottom: 0;
     height: 3px;
     width: 50px;
     background-color: var(--accent-color);
     transition: width var(--transition-speed);
 }
+
+html[dir="ltr"] h3::after {
+    left: 0;
+}
+
+html[dir="rtl"] h3::after {
+    right: 0;
+}
+
 
 .page-section:hover h3::after {
     width: 100px;
@@ -178,6 +192,10 @@ nav ul {
     justify-content: center;
     transition: all var(--transition-speed);
     align-items: center;
+}
+
+html[dir="rtl"] nav ul {
+    flex-direction: row-reverse;
 }
 
 nav li {
@@ -586,6 +604,14 @@ footer {
 .fade-in {
     animation: fadeIn 0.8s ease-in-out;
 }
+
+html[dir="rtl"] .skills-container,
+html[dir="rtl"] .page-section,
+html[dir="rtl"] .project,
+html[dir="rtl"] .contact-section {
+    text-align: right;
+}
+
 
 /* Media Queries */
 @media screen and (max-width: 768px) {

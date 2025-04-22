@@ -1,0 +1,117 @@
+{
+  "description": "Persönliche Website von Felipe Graeff – Softwareentwickler-Portfolio",
+  "title": "Felipe Graeff | Softwareentwickler",
+  "name": "Felipe Graeff",
+  "position": "Softwareentwickler",
+  "view-my-work-btn": "Meine Arbeit ansehen",
+  "get-in-touch-btn": "Kontakt aufnehmen",
+
+  "about-me-title": "Über mich",
+  "about-me-text": [
+    "Hallo! Ich bin Felipe, ein Softwareentwickler mit Schwerpunkt auf Backend-Entwicklung. Ich habe ein solides Fundament in Informatik und eine Leidenschaft für skalierbare, sichere und wirkungsvolle Systeme. Ich arbeite gerne an Open-Source-Projekten und integriere Backend-Services in reale Anwendungen.",
+    "Meine Erfahrungen reichen von cloudbasierten Microservices bis hin zu forschungsorientierten Projekten im Bereich Kryptografie und sichere Datenspeicherung. Ich schätze kollaborative Umgebungen und entwickle gerne Tools, die die Interaktion zwischen Mensch und Technologie verbessern.",
+    "Ich bin stets auf der Suche nach Möglichkeiten, meine technischen Fähigkeiten mit sinnvollen Herausforderungen zu verbinden – sei es in Bildung, Infrastruktur oder Produktentwicklung. Sauberer Code, durchdachte Architektur und die Chance, in einem großartigen Team zu lernen und zu wachsen, sind mir wichtig."
+  ],
+
+  "interests-title": "Interessensgebiete",
+
+  "interests-distributed-title": "Verteilte Systeme",
+  "interests-distributed-desc": "Entwicklung skalierbarer, serviceorientierter Architekturen für reale Anwendungen.",
+
+  "interests-security-title": "Sicherheit & Kryptografie",
+  "interests-security-desc": "Sichere Datenspeicherung, Verschlüsselungsverfahren und datenschutzfreundliche API-Gestaltung erforschen.",
+
+  "interests-iot-title": "Automatisierung & IoT",
+  "interests-iot-desc": "Arbeiten mit Mikrocontrollern, Hausautomatisierung und Integration von Hardware und Software mit Tools wie Arduino.",
+
+  "interests-languages-title": "Sprachen & Kommunikation",
+  "interests-languages-desc": "Untersuchung natürlicher Sprachen und der Art, wie Menschen und Systeme über Kulturen und Plattformen hinweg kommunizieren.",
+
+  "interests-collab-title": "Kollaborative Entwicklung",
+  "interests-collab-desc": "Beitrag zu gemeinsam genutzten Codebasen, Verbesserung von Tools und Zusammenarbeit an Lösungen im Team.",
+
+  "skills-title": "Fähigkeiten",
+
+  "skills-level-label": "Kompetenzniveau:",
+  "skill-level-beginner": "Anfänger",
+  "skill-level-elementary": "Grundkenntnisse",
+  "skill-level-intermediate": "Fortgeschritten",
+  "skill-level-advanced": "Sehr fortgeschritten",
+  "skill-level-expert": "Experte",
+
+  "skill-category-programming-languages": "Programmiersprachen",
+  "skill-category-frameworks": "Frameworks & Bibliotheken",
+  "skill-category-databases": "Datenbanken & Cloud",
+  "skill-category-tools": "Werkzeuge & Workflows",
+
+  "projects-title": "Projekte",
+  "view-project-btn": "Projekt ansehen",
+
+  "project-maabe-title": "MA-ABE Sichere API",
+  "project-maabe-caption": "Kryptografische API mit Flask und Charm-Crypto",
+  "project-maabe-desc": "Ein hybrides Verschlüsselungssystem, das MA-ABE und AES kombiniert – zur sicheren Speicherung von IoT-Gesundheitsdaten. Schlüsselverwaltung mit Redis, Performance-Tests mit Locust.",
+
+  "project-crypto-title": "Plattform für Kryptowährungs-Handel",
+  "project-crypto-caption": "Microservice-basierte Handelsplattform",
+  "project-crypto-desc": "Entwicklung von Backend-Diensten für eine Krypto-Handelsplattform, mit sicherer Authentifizierung (AWS Cognito), Transaktionsabwicklung und API Gateway-Integration. Integration von Drittanbietern wie CoinPayments. Deployment mit Amazon ECS.",
+
+  "project-iot-title": "Hausautomatisierung mit IoT",
+  "project-iot-caption": "Arduino-basierte Automatisierungslösung",
+  "project-iot-desc": "Entwicklung eines WLAN-fähigen Schalters mit Arduino und ESP8266 zur Fernsteuerung von Licht und Geräten. Weboberfläche und MQTT-Einbindung für Echtzeitkommunikation inklusive.",
+
+  "project-cthread-title": "CThread",
+  "project-cthread-caption": "Einfache Thread-Bibliothek für C",
+  "project-cthread-desc": "Eine an PThreads angelehnte Bibliothek für C, entwickelt im Rahmen eines Betriebssystemkurses. Bietet Grundfunktionen für Thread-Erstellung und -Synchronisation.",
+
+  "project-capybot-title": "CapyBot",
+  "project-capybot-caption": "Ein KI-Assistent im Capybara-Stil für Slack",
+  "project-capybot-desc": "Slack-App mit OpenAI-Integration, die dem Team erlaubt, mit einem humorvollen Capybara-KI-Assistenten zu interagieren. Hilft bei Aufgaben, Ideenfindung oder zur Unterhaltung während Deployments.",
+
+  "project-shrek-title": "Shrek vs. Schlachtschiffe",
+  "project-shrek-caption": "Ein Spiel, in dem Shrek gegen eine Kriegsflotte kämpft",
+  "project-shrek-desc": "Ein mit OpenGL entwickeltes Spiel zur Veranschaulichung von Konzepten wie Licht, Shader, Texturen, Kollisionserkennung und Bézier-Kurven. Erstellt im Rahmen eines Hochschulkurses.",
+
+  "project-compiler-title": "Mini-Compiler",
+  "project-compiler-caption": "Compiler entwickelt mit Lex und Yacc",
+  "project-compiler-desc": "Ein Compiler für eine fiktive Sprache, erstellt im Compiler-Kurs. Enthält lexikalische Analyse, Syntaxanalyse, Symboltabelle und Fehlermanagement.",
+
+  "project-snake-title": "Snake",
+  "project-snake-caption": "Das klassische Handyspiel – jetzt im Terminal",
+  "project-snake-desc": "Terminal-Version des Snake-Spiels in C, mit der curses-Bibliothek für Eingabe und Anzeige. Ideal zum Üben von Low-Level-UI und Spielmechanik.",
+
+  "formation-title": "Ausbildung",
+  "formation-course-cs": "Informatik",
+  "formation-uni-ufrgs": "Bundesuniversität von Rio Grande do Sul",
+  "formation-course-sad": "Systemanalyse und -entwicklung",
+  "formation-uni-uniaselvi": "UNIASSELVI",
+
+  "formation-certifications-title": "Veranstaltungen & Zertifikate",
+  "formation-cert-js": "Fortgeschrittenes JavaScript-Zertifikat",
+  "formation-cert-python": "Spezialisierung in Data Science mit Python",
+  "formation-cert-ruby": "Ruby on Rails Entwicklung",
+
+  "languages-title": "Sprachen",
+  "languages-level-label": "Sprachniveau:",
+  "language-level-beginner": "Anfänger",
+  "language-level-elementary": "Grundkenntnisse",
+  "language-level-intermediate": "Mittelstufe",
+  "language-level-advanced": "Fortgeschritten",
+  "language-level-fluent": "Fließend",
+
+  "lang-portuguese": "Portugiesisch",
+  "lang-english": "Englisch",
+  "lang-spanish": "Spanisch",
+  "lang-japanese": "Japanisch",
+  "lang-french": "Französisch",
+  "lang-catalan": "Katalanisch",
+  "lang-german": "Deutsch",
+  "lang-arabic": "Arabisch",
+
+  "contact-title": "Kontakt",
+  "contact-description": "Du kannst mich über einen der folgenden Kanäle kontaktieren:",
+  "contact-email": "E-Mail",
+  "contact-linkedin": "LinkedIn",
+  "contact-github": "GitHub",
+
+  "footer-text": "© 2024 Felipe Graeff | Softwareentwickler"
+}

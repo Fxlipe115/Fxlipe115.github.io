@@ -1,0 +1,117 @@
+{
+  "description": "フェリペ・グラエフの個人サイト - ソフトウェア開発者ポートフォリオ",
+  "title": "フェリペ・グラエフ | ソフトウェア開発者",
+  "name": "フェリペ・グラエフ",
+  "position": "ソフトウェア開発者",
+  "view-my-work-btn": "作品を見る",
+  "get-in-touch-btn": "連絡する",
+
+  "about-me-title": "自己紹介",
+  "about-me-text": [
+    "こんにちは！フェリペです。バックエンドに特化したソフトウェア開発者であり、コンピューターサイエンスの確かな基礎と、スケーラブルかつセキュアで影響力のあるシステム構築への情熱を持っています。オープンソースプロジェクトへの参加や、バックエンドサービスと実世界のアプリケーションの統合を楽しんでいます。",
+    "クラウドベースのマイクロサービスから、暗号技術や安全なデータ保存に関する研究プロジェクトまで、幅広い経験があります。チームでの協力的な開発環境が得意で、人々の技術との関わり方を変えるツールの構築にやりがいを感じています。",
+    "教育、インフラ、製品開発などの分野で、技術スキルを意義ある課題と結びつける方法を常に模索しています。クリーンなコード、よく設計されたアーキテクチャ、そして学び成長できるチーム環境を大切にしています。"
+  ],
+
+  "interests-title": "関心分野",
+
+  "interests-distributed-title": "分散システム",
+  "interests-distributed-desc": "実世界のアプリケーションのためのスケーラブルなサービス指向アーキテクチャの設計と構築。",
+
+  "interests-security-title": "セキュリティと暗号技術",
+  "interests-security-desc": "安全なデータ保存、暗号化スキーム、プライバシー重視のAPI設計の研究。",
+
+  "interests-iot-title": "自動化とIoT",
+  "interests-iot-desc": "Arduinoなどのツールを使ったマイコン、家庭用オートメーション、ハードウェアとソフトウェアの統合。",
+
+  "interests-languages-title": "言語とコミュニケーション",
+  "interests-languages-desc": "自然言語や、文化やプラットフォームを超えた人間とシステムのコミュニケーション方法の探究。",
+
+  "interests-collab-title": "協働開発",
+  "interests-collab-desc": "コードベースの共同作業、ツールの改善、チームでのソリューション構築への貢献。",
+
+  "skills-title": "スキル",
+
+  "skills-level-label": "スキルレベル：",
+  "skill-level-beginner": "初級",
+  "skill-level-elementary": "初中級",
+  "skill-level-intermediate": "中級",
+  "skill-level-advanced": "上級",
+  "skill-level-expert": "熟練",
+
+  "skill-category-programming-languages": "プログラミング言語",
+  "skill-category-frameworks": "フレームワークとライブラリ",
+  "skill-category-databases": "データベースとクラウド",
+  "skill-category-tools": "ツールとワークフロー",
+
+  "projects-title": "プロジェクト",
+  "view-project-btn": "プロジェクトを見る",
+
+  "project-maabe-title": "MA-ABEセキュアAPI",
+  "project-maabe-caption": "FlaskとCharm-Cryptoで構築された暗号API",
+  "project-maabe-desc": "MA-ABEとAESを組み合わせたハイブリッド暗号システムで、医療系IoTデータの安全な保存を目的としています。Redisによる鍵管理とLocustによるパフォーマンス評価を含みます。",
+
+  "project-crypto-title": "暗号通貨取引プラットフォーム",
+  "project-crypto-caption": "マイクロサービスベースの取引システム",
+  "project-crypto-desc": "AWS Cognitoによるユーザー認証、トランザクション処理、API Gatewayの統合を中心とした、暗号資産取引プラットフォームのバックエンド開発。CoinPaymentsなどの外部サービスとも連携。Amazon ECSでデプロイ。",
+
+  "project-iot-title": "IoTホームオートメーション",
+  "project-iot-caption": "Arduinoベースの自動化システム",
+  "project-iot-desc": "ArduinoとESP8266を使用したWi-Fi対応の電気スイッチを開発。リレーモジュールを用いて、照明や家電を遠隔操作可能に。WebインターフェースとMQTTによるリアルタイム通信を実現。",
+
+  "project-cthread-title": "CThread",
+  "project-cthread-caption": "C言語のための基本的なスレッドライブラリ",
+  "project-cthread-desc": "PThreadsに似たC言語用ライブラリ。オペレーティングシステムの授業で開発し、スレッドの生成と同期の基本機能を提供します。",
+
+  "project-capybot-title": "CapyBot",
+  "project-capybot-caption": "Slack用のカピバラ風AIアシスタント",
+  "project-capybot-desc": "OpenAI APIと連携するSlackアプリで、チームがカピバラ風AIと会話できるようになります。タスクの補助、アイデア出し、またはデプロイ待ちの間の息抜きにも活用。",
+
+  "project-shrek-title": "シュレック vs 戦艦",
+  "project-shrek-caption": "シュレックが戦艦艦隊と対決するゲーム",
+  "project-shrek-desc": "OpenGLで完全に開発された小規模ゲーム。ライティング、シェーダー、テクスチャ、衝突検出、ベジエ曲線など、コンピュータグラフィックスの基本概念を実演。大学の授業で作成。",
+
+  "project-compiler-title": "ミニコンパイラ",
+  "project-compiler-caption": "LexとYaccで構築されたコンパイラ",
+  "project-compiler-desc": "架空の言語用のコンパイラを、コンパイラの授業で開発。字句解析、構文解析、シンボルテーブル、エラーハンドリングなどの基本概念を含みます。",
+
+  "project-snake-title": "スネーク",
+  "project-snake-caption": "あの携帯ゲームがターミナルで遊べる！",
+  "project-snake-desc": "C言語で書かれたターミナル版のスネークゲーム。cursesライブラリを使った入力処理と画面描画。低レベルUI制御とゲームループの練習に最適。",
+
+  "formation-title": "学歴",
+  "formation-course-cs": "コンピューターサイエンス",
+  "formation-uni-ufrgs": "リオグランデ・ド・スル連邦大学",
+  "formation-course-sad": "システム分析と開発",
+  "formation-uni-uniaselvi": "UNIASSELVI",
+
+  "formation-certifications-title": "イベントと認定資格",
+  "formation-cert-js": "JavaScript上級認定",
+  "formation-cert-python": "Pythonデータサイエンス特化コース",
+  "formation-cert-ruby": "Ruby on Rails開発",
+
+  "languages-title": "言語",
+  "languages-level-label": "習熟度：",
+  "language-level-beginner": "初級",
+  "language-level-elementary": "初中級",
+  "language-level-intermediate": "中級",
+  "language-level-advanced": "上級",
+  "language-level-fluent": "流暢",
+
+  "lang-portuguese": "ポルトガル語",
+  "lang-english": "英語",
+  "lang-spanish": "スペイン語",
+  "lang-japanese": "日本語",
+  "lang-french": "フランス語",
+  "lang-catalan": "カタルーニャ語",
+  "lang-german": "ドイツ語",
+  "lang-arabic": "アラビア語",
+
+  "contact-title": "お問い合わせ",
+  "contact-description": "以下のいずれかの方法でお気軽にご連絡ください：",
+  "contact-email": "メール",
+  "contact-linkedin": "LinkedIn",
+  "contact-github": "GitHub",
+
+  "footer-text": "© 2024 フェリペ・グラエフ | ソフトウェア開発者"
+}
