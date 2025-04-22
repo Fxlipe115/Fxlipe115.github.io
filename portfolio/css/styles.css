@@ -722,6 +722,7 @@ html[dir="rtl"] .contact-section {
 @media screen and (max-width: 500px) {
     nav {
         position: relative;
+        flex-direction: column;
     }
 
     .nav-controls {
