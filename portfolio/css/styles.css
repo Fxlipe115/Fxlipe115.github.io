@@ -214,10 +214,6 @@ nav ul {
     padding: 0;
 }
 
-html[dir="rtl"] nav ul {
-    flex-direction: row-reverse;
-}
-
 nav li {
     list-style-type: none;
     text-align: center;
@@ -353,6 +349,11 @@ nav a:hover {
     flex-direction: column;
     gap: 0.2rem;
     z-index: 999;
+}
+
+html[dir="rtl"] #flag-options {
+    right: auto;
+    left: 0;
 }
 
 #flag-options li {
