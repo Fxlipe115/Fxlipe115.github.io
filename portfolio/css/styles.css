@@ -114,7 +114,7 @@ header {
     text-align: center;
     position: relative;
     overflow: hidden;
-    min-height: 300px; /* Ensure minimum height for header */
+    min-height: 350px; /* Ensure minimum height for header */
     display: flex;
     align-items: center;
     justify-content: center;
