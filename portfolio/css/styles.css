@@ -793,6 +793,11 @@ html[dir="rtl"] .contact-section {
         justify-content: center;
         gap: 8px;
     }
+
+    html[dir="rtl"] .language-dropdown {
+        right: auto;
+        left: 15px;
+    }
     
     .language-dropdown.visible {
         display: flex;
@@ -831,6 +836,11 @@ html[dir="rtl"] .contact-section {
         z-index: 1000;
         cursor: pointer;
         box-shadow: 0 2px 10px var(--shadow-color);
+    }
+
+    html[dir="rtl"] #language-toggle {
+        right: auto;
+        left: 15px;
     }
     
     #flag-options {
