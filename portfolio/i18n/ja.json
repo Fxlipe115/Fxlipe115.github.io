@@ -82,14 +82,15 @@
 
   "formation-title": "学歴",
   "formation-course-cs": "コンピューターサイエンス",
-  "formation-uni-ufrgs": "リオグランデ・ド・スル連邦大学",
+  "formation-uni-ufrgs": "リオグランデ・ド・スル連邦大学 (UFRGS)",
   "formation-course-sad": "システム分析と開発",
   "formation-uni-uniaselvi": "UNIASSELVI",
 
   "formation-certifications-title": "イベントと認定資格",
-  "formation-cert-js": "JavaScript上級認定",
-  "formation-cert-python": "Pythonデータサイエンス特化コース",
-  "formation-cert-ruby": "Ruby on Rails開発",
+  "event-sbrc-2019": "ブラジルコンピュータネットワークシンポジウム（SBRC）– 2019年",
+  "event-erds-2019": "第19回南部地域高性能計算学校（ERAD-RS）– 2019年",
+  "formation-cert-cp-2018": "競技プログラミングラボ - 2018（UFRGS、ボランティアおよびアシスタント奨学生）",
+  "formation-cert-jlpt": "日本語能力試験（JLPT）N3",
 
   "languages-title": "言語",
   "languages-level-label": "習熟度：",

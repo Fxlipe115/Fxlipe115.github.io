@@ -82,14 +82,15 @@
 
   "formation-title": "Formació",
   "formation-course-cs": "Ciències de la Computació",
-  "formation-uni-ufrgs": "Universitat Federal de Rio Grande do Sul",
+  "formation-uni-ufrgs": "Universitat Federal de Rio Grande do Sul (UFRGS)",
   "formation-course-sad": "Anàlisi i desenvolupament de sistemes",
   "formation-uni-uniaselvi": "UNIASSELVI",
 
   "formation-certifications-title": "Esdeveniments i certificacions",
-  "formation-cert-js": "Certificació avançada en JavaScript",
-  "formation-cert-python": "Especialització en ciència de dades amb Python",
-  "formation-cert-ruby": "Desenvolupament amb Ruby on Rails",
+  "event-sbrc-2019": "Simposi Brasiler de Xarxes de Computadors (SBRC) – 2019",
+  "event-erds-2019": "XIX Escola Regional del Sud d'Alt Rendiment (ERAD-RS) – 2019",
+  "formation-cert-cp-2018": "Laboratori de Programació Competitiva - 2018 (UFRGS, voluntari i becari auxiliar)",
+  "formation-cert-jlpt": "Examen de Proficiencia de Llengua Japonesa (JLPT) N3",
 
   "languages-title": "Idiomes",
   "languages-level-label": "Nivell de competència:",

@@ -82,14 +82,15 @@
 
   "formation-title": "التعليم",
   "formation-course-cs": "علوم الحاسوب",
-  "formation-uni-ufrgs": "الجامعة الفدرالية ريو غراندي دو سول",
+  "formation-uni-ufrgs": "الجامعة الفدرالية ريو غراندي دو سول (UFRGS)",
   "formation-course-sad": "تحليل وتطوير الأنظمة",
   "formation-uni-uniaselvi": "UNIASSELVI",
 
   "formation-certifications-title": "الفعاليات والشهادات",
-  "formation-cert-js": "شهادة متقدمة في JavaScript",
-  "formation-cert-python": "تخصص في علم البيانات باستخدام Python",
-  "formation-cert-ruby": "تطوير Ruby on Rails",
+  "event-sbrc-2019": "الندوة البرازيلية لشبكات الحاسوب (SBRC) – 2019",
+  "event-erds-2019": "المدرسة الإقليمية التاسعة عشرة للأداء العالي في الجنوب (ERAD-RS) – 2019",
+  "formation-cert-cp-2018": "مختبر البرمجة التنافسية - 2018 (UFRGS، متطوع ومساعد باحث)",
+  "formation-cert-jlpt": "اليابانية (JLPT) المستوى N3",
 
   "languages-title": "اللغات",
   "languages-level-label": "مستوى الإتقان:",
