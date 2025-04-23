@@ -52,16 +52,17 @@
       
         <div class="language-dropdown" id="language-dropdown">
           <button id="theme-toggle" aria-label="Toggle dark mode">🌙</button>
-          <button id="selected-flag" aria-haspopup="true" aria-expanded="false"><span class="fi fi-gb"></span></button>
-          <ul id="flag-options" class="hidden">
-            <li data-lang="pt-br"><span class="fi fi-br" title="Português (Brasil)"></span></li>
-            <li data-lang="en-gb"><span class="fi fi-gb" title="English (UK)"></span></li>
-            <li data-lang="es"><span class="fi fi-es" title="Español"></span></li>
-            <li data-lang="ja"><span class="fi fi-jp" title="日本語"></span></li>
-            <li data-lang="fr"><span class="fi fi-fr" title="Français"></span></li>
-            <li data-lang="ca"><span class="fi fi-es-ct" title="Català"></span></li>
-            <li data-lang="de"><span class="fi fi-de" title="Deutsch"></span></li>
-            <li data-lang="ar"><span class="fi fi-sa" title="العربية"></span></li>
+          <button id="selected-flag" aria-haspopup="menu" aria-expanded="false" aria-controls="flag-options" data-i18n-attr="language-name:aria-label"
+      ><span class="fi fi-gb"></span></button>
+          <ul id="flag-options" class="hidden" role="menu" aria-labelledby="selected-flag">
+            <li data-lang="pt-br" role="menuitem" tabindex="0" aria-label="Português (Brasil)"><span class="fi fi-br" title="Português (Brasil)"></span></li>
+            <li data-lang="en-gb" role="menuitem" tabindex="0" aria-label="English (UK)"><span class="fi fi-gb" title="English (UK)"></span></li>
+            <li data-lang="es" role="menuitem" tabindex="0" aria-label="Español"><span class="fi fi-es" title="Español"></span></li>
+            <li data-lang="ja" role="menuitem" tabindex="0" aria-label="日本語"><span class="fi fi-jp" title="日本語"></span></li>
+            <li data-lang="fr" role="menuitem" tabindex="0" aria-label="Français"><span class="fi fi-fr" title="Français"></span></li>
+            <li data-lang="ca" role="menuitem" tabindex="0" aria-label="Català"><span class="fi fi-es-ct" title="Català"></span></li>
+            <li data-lang="de" role="menuitem" tabindex="0" aria-label="Deutsch"><span class="fi fi-de" title="Deutsch"></span></li>
+            <li data-lang="ar" role="menuitem" tabindex="0" aria-label="العربية"><span class="fi fi-sa" title="العربية"></span></li>
           </ul>
         </div>
       </div>      
@@ -112,55 +113,55 @@
     
       <section id="skills-section" class="page-section fade-in">
         <h3 data-i18n="skills-title">Skills</h3>
-        <div class="skills-legend">
+        <div class="skills-legend" aria-hidden="true">
           <p data-i18n="skills-level-label">Skill Level: </p>
           <div class="legend-item">
             <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
             </div>
             <span data-i18n="skill-level-beginner">Beginner</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
             </div>
             <span data-i18n="skill-level-elementary">Elementary</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
             </div>
             <span data-i18n="skill-level-intermediate">Intermediate</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
             </div>
             <span data-i18n="skill-level-advanced">Advanced</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
             </div>
             <span data-i18n="skill-level-expert">Expert</span>
           </div>
@@ -176,93 +177,93 @@
               <div class="skill-list">
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/typescript/typescript-original.svg" alt="TypeScript logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     TypeScript
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-advanced:aria-label skill-level-advanced:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/javascript/javascript-original.svg" alt="JavaScript logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     JavaScript
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-advanced:aria-label skill-level-advanced:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/python/python-original.svg" alt="Python logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     Python
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-advanced:aria-label skill-level-advanced:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C plus plus logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/cplusplus/cplusplus-original.svg" alt="C plus plus logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     C++
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-advanced:aria-label skill-level-advanced:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/java/java-original.svg" alt="Java logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     Java
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-intermediate:aria-label skill-level-intermediate:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/kotlin/kotlin-original.svg" alt="Kotlin logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     Kotlin
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-intermediate:aria-label skill-level-intermediate:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haskell/haskell-original.svg" alt="Haskell logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/haskell/haskell-original.svg" alt="Haskell logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     Haskell
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-elementary:aria-label skill-level-elementary:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
@@ -278,41 +279,41 @@
               <div class="skill-list">
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" alt="React logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nestjs/nestjs-original.svg" alt="React logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     NestJS
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-advanced:aria-label skill-level-advanced:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="React logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/nodejs/nodejs-original.svg" alt="React logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     Node.js
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-advanced:aria-label skill-level-advanced:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Express logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/flask/flask-original.svg" alt="Express logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     Flask
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-intermediate:aria-label skill-level-intermediate:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
@@ -328,67 +329,67 @@
               <div class="skill-list">
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mongodb/mongodb-original.svg" alt="MongoDB logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     MongoDB
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-intermediate:aria-label skill-level-intermediate:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;"> 
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/postgresql/postgresql-original.svg" alt="PostgreSQL logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true"> 
                     PostgreSQL
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-advanced:aria-label skill-level-advanced:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/mysql/mysql-original.svg" alt="MySQL logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     MySQL
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-advanced:aria-label skill-level-advanced:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/redis/redis-original.svg" alt="Redis logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     Redis
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-intermediate:aria-label skill-level-intermediate:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/amazonwebservices/amazonwebservices-original-wordmark.svg" alt="AWS logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     AWS
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-intermediate:aria-label skill-level-intermediate:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
@@ -404,67 +405,67 @@
               <div class="skill-list">
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/git/git-original.svg" alt="Git logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     Git
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-advanced:aria-label skill-level-advanced:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/docker/docker-original.svg" alt="Docker logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     Docker
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-intermediate:aria-label skill-level-intermediate:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/github/github-original.svg" alt="GitHub logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     GitHub Actions
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-intermediate:aria-label skill-level-intermediate:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/jenkins/jenkins-original.svg" alt="Jenkins logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     Jenkins
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-intermediate:aria-label skill-level-intermediate:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
                 <div class="skill-item">
                   <span class="skill-name">
-                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;">
+                    <img src="https://cdn.jsdelivr.net/gh/devicons/devicon/icons/vscode/vscode-original.svg" alt="VS Code logo" style="width: 20px; height: 20px; vertical-align: middle; margin-right: 5px;" aria-hidden="true">
                     VS Code
                   </span>
-                  <div class="star-rating">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="far fa-star"></i>
+                  <div class="star-rating" role="img" data-i18n-attr="skill-level-advanced:aria-label skill-level-advanced:title">
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="fas fa-star" aria-hidden="true"></i>
+                    <i class="far fa-star" aria-hidden="true"></i>
                   </div>
                 </div>
               </div>
@@ -580,55 +581,55 @@
       
       <section id="languages-section" class="page-section fade-in">
         <h3>Languages</h3>
-        <div class="skills-legend">
+        <div class="skills-legend" aria-hidden="true">
           <p data-i18n="languages-level-label">Proficiency Level: </p>
           <div class="legend-item">
             <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
             </div>
             <span data-i18n="language-level-beginner">Beginner</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
             </div>
             <span data-i18n="language-level-elementary">Elementary</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
             </div>
             <span data-i18n="language-level-intermediate">Intermediate</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="far fa-star"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="far fa-star" aria-hidden="true"></i>
             </div>
             <span data-i18n="language-level-advanced">Advanced</span>
           </div>
           <div class="legend-item">
             <div class="star-rating">
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
-              <i class="fas fa-star"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
+              <i class="fas fa-star" aria-hidden="true"></i>
             </div>
             <span data-i18n="language-level-fluent">Fluent</span>
           </div>
@@ -638,82 +639,82 @@
           <div class="skill-list">
             <div class="skill-item">
               <span class="skill-name"><span class="fi fi-br"></span> <span data-i18n="lang-portuguese">Portuguese</span></span>
-              <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+              <div class="star-rating" role="img" data-i18n-attr="language-level-fluent:aria-label language-level-fluent:title">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-gb"></span> <span data-i18n="lang-english">English</span></span>
-              <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
+              <span class="skill-name"><span class="fi fi-gb"></span> <span data-i18n="lang-english">English</span></span>
+              <div class="star-rating" role="img" data-i18n-attr="language-level-fluent:aria-label language-level-fluent:title">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-es"></span> <span data-i18n="lang-spanish">Spanish</span></span>
-              <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
+              <span class="skill-name"><span class="fi fi-es"></span> <span data-i18n="lang-spanish">Spanish</span></span>
+              <div class="star-rating" role="img" data-i18n-attr="language-level-advanced:aria-label language-level-advanced:title">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-jp"></span> <span data-i18n="lang-japanese">Japanese</span></span>
-              <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
+              <span class="skill-name"><span class="fi fi-jp"></span> <span data-i18n="lang-japanese">Japanese</span></span>
+              <div class="star-rating" role="img" data-i18n-attr="language-level-intermediate:aria-label language-level-intermediate:title">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-fr"></span> <span data-i18n="lang-french">French</span></span>
-              <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
+              <span class="skill-name"><span class="fi fi-fr"></span> <span data-i18n="lang-french">French</span></span>
+              <div class="star-rating" role="img" data-i18n-attr="language-level-elementary:aria-label language-level-elementary:title">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-es-ct"></span> <span data-i18n="lang-catalan">Catalan</span></span>
-              <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
+              <span class="skill-name"><span class="fi fi-es-ct"></span> <span data-i18n="lang-catalan">Catalan</span></span>
+              <div class="star-rating" role="img" data-i18n-attr="language-level-elementary:aria-label language-level-elementary:title">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-de"></span> <span data-i18n="lang-german">German</span></span>
-              <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
+              <span class="skill-name"><span class="fi fi-de"></span> <span data-i18n="lang-german">German</span></span>
+              <div class="star-rating" role="img" data-i18n-attr="language-level-elementary:aria-label language-level-elementary:title">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
               </div>
             </div>
             <div class="skill-item">
-              <span class="skill-name"><span class="skill-name"><span class="fi fi-sa"></span> <span data-i18n="lang-arabic">Arabic</span></span>
-              <div class="star-rating">
-                <i class="fas fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
-                <i class="far fa-star"></i>
+              <span class="skill-name"><span class="fi fi-sa"></span> <span data-i18n="lang-arabic">Arabic</span></span>
+              <div class="star-rating" role="img" data-i18n-attr="language-level-beginner:aria-label language-level-beginner:title">
+                <i class="fas fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
+                <i class="far fa-star" aria-hidden="true"></i>
               </div>
             </div>
           </div>

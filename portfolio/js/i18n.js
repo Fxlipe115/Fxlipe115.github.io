@@ -42,10 +42,12 @@ function applyTranslations(translations) {
   });
 
   document.querySelectorAll('[data-i18n-attr]').forEach(el => {
-    const [key, attr] = el.getAttribute('data-i18n-attr').split(':');
-    if (translations[key]) {
-      el.setAttribute(attr, translations[key]);
-    }
+    el.getAttribute('data-i18n-attr').split(' ').forEach(entry => {
+      const [key, attr] = entry.split(':');
+      if (translations[key]) {
+        el.setAttribute(attr, translations[key]);
+      }
+    });
   });
 
   document.querySelectorAll('[data-i18n-paragraphs]').forEach(el => {
