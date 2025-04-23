@@ -1,0 +1,9 @@
+# robots.txt for https://graeffsoftware.com
+
+User-agent: *
+Disallow: /private/
+Disallow: /drafts/
+Disallow /portfolio-old/
+Allow: /
+
+Sitemap: https://graeffsoftware.com/sitemap.xml
