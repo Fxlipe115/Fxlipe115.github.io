@@ -465,6 +465,21 @@ dd {
     gap: 15px;
 }
 
+.skill-name .fa-github {
+    color: black;
+    font-size: 20px;
+    margin-right: 5px;
+    vertical-align: middle;
+}
+
+[data-theme="dark"] .skill-name .fa-github {
+    color: white
+}
+
+[data-theme="dark"] .skill-name .flask-logo {
+    filter: invert(1);
+}
+
 .skills-legend p {
     margin: 0;
     font-weight: 600;
