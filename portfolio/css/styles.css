@@ -476,8 +476,8 @@ dd {
     color: white
 }
 
-[data-theme="dark"] .skill-name .flask-logo {
-    filter: invert(1);
+[data-theme="dark"] .skill-name .dark-logo {
+    filter: invert(1) saturate(0);
 }
 
 .skills-legend p {
