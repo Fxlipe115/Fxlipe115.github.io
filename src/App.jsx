@@ -20,7 +20,6 @@ export default function App() {
   return (
     <div
       style={{
-        backgroundImage: `url(${back})`,
         textAlign: "center",
         minHeight: "100vh",
       }}
