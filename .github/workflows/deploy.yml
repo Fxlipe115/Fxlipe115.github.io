@@ -13,11 +13,6 @@ jobs:
       - name: Checkout code
         uses: actions/checkout@v4
 
-      - name: Configure Git identity
-        run: |
-          git config --global user.name "${{ github.actor }}"
-          git config --global user.email "${{ github.actor }}@users.noreply.github.com"
-
       - name: Setup Node.js
         uses: actions/setup-node@v4
         with:
@@ -26,7 +21,13 @@ jobs:
       - name: Install dependencies
         run: npm ci
 
-      - name: Deploy to GitHub Pages
-        run: |
-          npx gh-pages -d dist \
-            --repo "https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/${{ github.repository }}.git"
+      - name: Build
+        run: npm run build
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v4
+        with:
+          # the built files directory
+          publish_dir: ./dist
+          # this token lets the action push to gh-pages for you
+          github_token: ${{ secrets.GITHUB_TOKEN }}
