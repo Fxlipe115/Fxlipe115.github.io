@@ -27,7 +27,5 @@ jobs:
       - name: Deploy
         uses: peaceiris/actions-gh-pages@v4
         with:
-          # the built files directory
           publish_dir: ./dist
-          # this token lets the action push to gh-pages for you
           github_token: ${{ secrets.GITHUB_TOKEN }}
