@@ -87,11 +87,19 @@ export default function App() {
                       >
                         Welcome to Felipe Graeff’s amazing website
                       </h1>
-                      <a href="/software" target="_blank" rel="noreferrer">
+                      <a
+                        href="/software-portfolio"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <img src={enter} alt="Enter Software" />
                       </a>
                       <br />
-                      <a href="/photo" target="_blank" rel="noreferrer">
+                      <a
+                        href="/photo-portfolio"
+                        target="_blank"
+                        rel="noreferrer"
+                      >
                         <img src={camera} alt="Enter Photo" />
                       </a>
                     </td>
