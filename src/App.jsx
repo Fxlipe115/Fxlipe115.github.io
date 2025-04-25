@@ -85,7 +85,7 @@ export default function App() {
                           fontFamily: "Comic Sans MS",
                         }}
                       >
-                        Welcome to Felipe Graeff’s amazing website
+                        Welcome to Felipe Graeff's amazing website
                       </h1>
                       <a
                         href="/software-portfolio"
@@ -100,7 +100,12 @@ export default function App() {
                         target="_blank"
                         rel="noreferrer"
                       >
-                        <img src={camera} alt="Enter Photo" />
+                        <img
+                          height="30%"
+                          width="30%"
+                          src={camera}
+                          alt="Enter Photo"
+                        />
                       </a>
                     </td>
                   </tr>
