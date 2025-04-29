@@ -14,7 +14,7 @@ export default function BioPanel() {
         cryptography, and kendo. Browse my portfolios below!
       </p>
       <hr />
-      <a href="mailto:hello[at]felipegraeff.com">
+      <a href="mailto:hello@felipegraeff.com">
         <img src={mail} width="40%" alt="Email me" />
         <br />
         Contact Me
