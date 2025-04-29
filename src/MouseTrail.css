@@ -1,5 +1,5 @@
 .star {
-  position: fixed;
+  position: absolute;
   pointer-events: none;
 }
 

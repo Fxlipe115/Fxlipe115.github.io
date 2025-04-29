@@ -7,24 +7,19 @@ import note from "./assets/images/note.gif";
 import baby from "./assets/images/baby.gif";
 import enter from "./assets/images/enter.gif";
 import camera from "./assets/images/camera.gif";
-import image from "./assets/images/image.png";
+import image from "./assets/images/welcome.png";
 import cool from "./assets/images/cool.gif";
 import okay from "./assets/images/okay.gif";
 import keyboard from "./assets/images/keyboard.gif";
 import blown from "./assets/images/blown.gif";
 import run from "./assets/images/run.gif";
-import counter from "./assets/images/counter.gif";
-import back from "./assets/images/back.gif";
+// import counter from "./assets/images/counter.gif";
+import Marquee from "react-fast-marquee";
 
 export default function App() {
   return (
-    <div
-      style={{
-        textAlign: "center",
-        minHeight: "100vh",
-      }}
-    >
-      <table border={6} cellPadding={8} style={{ margin: "auto" }}>
+    <div className="app-container">
+      <table border={6} cellPadding={8} className="layout-table">
         <tbody>
           <tr>
             <td>
@@ -78,18 +73,24 @@ export default function App() {
                 <tbody>
                   <tr>
                     <td>
-                      <h1
-                        style={{
-                          color: "red",
-                          fontFamily: "Comic Sans MS",
-                        }}
+                      <Marquee
+                        gradient={false}
+                        speed={50}
+                        className="marquee-text"
                       >
+                        🔥 Now Featuring: Felipe's Software Projects and
+                        Photography Portfolio! 🔥
+                      </Marquee>
+
+                      <h1 className="title">
                         Welcome to Felipe Graeff's amazing website
                       </h1>
+
                       <a
                         href="/software-portfolio"
                         target="_blank"
                         rel="noreferrer"
+                        className="enter-link"
                       >
                         <img src={enter} alt="Enter Software" />
                       </a>
@@ -98,13 +99,9 @@ export default function App() {
                         href="/photo-portfolio"
                         target="_blank"
                         rel="noreferrer"
+                        className="photo-link"
                       >
-                        <img
-                          height="30%"
-                          width="30%"
-                          src={camera}
-                          alt="Enter Photo"
-                        />
+                        <img src={camera} alt="Enter Photo" />
                       </a>
                     </td>
                   </tr>
