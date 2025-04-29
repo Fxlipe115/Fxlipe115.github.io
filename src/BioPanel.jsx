@@ -1,6 +1,8 @@
 import React from "react";
 import "./App.css";
 
+import mail from "./assets/images/note.gif";
+
 export default function BioPanel() {
   return (
     <aside className="column left">
@@ -12,8 +14,8 @@ export default function BioPanel() {
         cryptography, and kendo. Browse my portfolios below!
       </p>
       <hr />
-      <a href="mailto:felipe@example.com">
-        <img src="/images/note.gif" alt="Email me" />
+      <a href="mailto:felipegraeff[at]hotmail.com">
+        <img src={mail} width="40%" alt="Email me" />
         <br />
         Contact Me
       </a>
