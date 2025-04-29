@@ -2,12 +2,13 @@ import React from "react";
 import "./App.css";
 
 import mail from "./assets/images/note.gif";
+import hello from "./assets/images/hello.gif";
 
 export default function BioPanel() {
   return (
     <aside className="column left">
       <h2>About Me</h2>
-      <img src="/images/hello.gif" alt="Hello" />
+      <img src={hello} alt="Hello" />
       <br />
       <p>
         I’m a Brazilian software engineer who loves retro web design,
