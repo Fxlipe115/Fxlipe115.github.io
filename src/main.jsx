@@ -13,11 +13,11 @@ createRoot(document.getElementById("root")).render(
   <StrictMode>
     <div className="app">
       <Header />
+      <BioPanel />
       <main className="main">
-        <BioPanel />
         <PortalsPanel />
-        <FunCorner />
       </main>
+      <FunCorner />
       <Footer />
     </div>
     {/* <App /> */}
