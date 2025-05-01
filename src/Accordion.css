@@ -1,0 +1,27 @@
+.accordion {
+  font-family: inherit;
+  color: inherit;
+}
+
+.accordion-item {
+  margin-bottom: 1rem;
+}
+
+.accordion-title {
+  cursor: pointer;
+  padding: 0.5rem;
+  border-radius: 0.25rem;
+  transition: background 0.2s;
+}
+
+.accordion-title:hover,
+.accordion-title.active {
+  background: rgba(255,255,255,0.1);
+}
+
+.accordion-panel {
+  margin-top: 0.5rem;
+  padding-left: 1rem;
+  /* optional: add a left border or different bg to distinguish */
+  border-left: 2px solid rgba(255,255,255,0.2);
+}
