@@ -7,7 +7,7 @@ import welcome from "./assets/images/welcome.png";
 
 export default function PortalsPanel() {
   return (
-    <section className="column center">
+    <main className="column center">
       <h2>Portfolios</h2>
       <div className="portfolio-links">
         <a
@@ -48,6 +48,6 @@ export default function PortalsPanel() {
           updates.
         </p>
       </div>
-    </section>
+    </main>
   );
 }
