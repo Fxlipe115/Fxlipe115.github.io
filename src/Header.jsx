@@ -6,9 +6,18 @@ export default function Header() {
   return (
     <header className="header">
       <h1>⚡ Welcome to Felipe Graeff’s Retro Hub ⚡</h1>
-      <Marquee gradient={false} speed={50} className="header-marquee">
-        “Hello, I'm Felipe — back-end dev & linguistics nerd & photography
-        enthusiast & kendo practitioner!”
+      <Marquee
+        gradient
+        gradientColor={[0, 0, 0]}
+        gradientWidth={80}
+        speed={40}
+        pauseOnHover
+        pauseOnClick
+        className="header-marquee"
+      >
+        Hello, I'm Felipe — back-end dev • linguistics nerd • amateur
+        photographer • kendō & iaidō practitioner • aviation enthusiast •
+        urbanism aficionado!
       </Marquee>
     </header>
   );

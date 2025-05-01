@@ -146,3 +146,39 @@ body, html {
   color: cyan;
   text-decoration: none;
 }
+
+/* Footer background + text */
+.footer {
+  /* background-color: #000; */
+  color: #0f0;
+  font-family: "Comic Sans MS", sans-serif;
+  text-align: center;
+  padding: 1rem;
+}
+
+/* Neon‐green divider */
+.retro-hr {
+  border: 1px solid #0f0;
+}
+
+/* Shared paragraph styling */
+.footer-text {
+  margin: 0.5rem 0;
+  font-size: 0.9rem;
+}
+
+/* Link color + hover */
+.retro-link {
+  color: #0ff;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.retro-link:hover {
+  text-decoration: underline;
+}
+
+/* Slightly smaller PGP block if you like */
+.pgp-info {
+  font-size: 0.85rem;
+}
