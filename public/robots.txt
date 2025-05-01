@@ -3,7 +3,6 @@
 User-agent: *
 Disallow: /private/
 Disallow: /drafts/
-Disallow /portfolio-old/
 Allow: /
 
 Sitemap: https://graeffsoftware.com/sitemap.xml
