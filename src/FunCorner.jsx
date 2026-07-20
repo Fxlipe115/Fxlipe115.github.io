@@ -32,6 +32,7 @@ export default function FunCorner() {
   const [dialPlaying, setDialPlaying] = useState(false);
   const [answer, setAnswer] = useState(null);
   const [shaking, setShaking] = useState(false);
+  const [nokia, setNokia] = useState(false);
 
   const playDialup = () => {
     const audio = new Audio(dialup);
@@ -45,6 +46,13 @@ export default function FunCorner() {
     const next = !glitter;
     setGlitter(next);
     document.body.classList.toggle("glitter-off", !next);
+  };
+
+  // PhoneFrame.css gates the Nokia overlay on body.nokia-on. Off by default.
+  const toggleNokia = () => {
+    const next = !nokia;
+    setNokia(next);
+    document.body.classList.toggle("nokia-on", next);
   };
 
   const shake = () => {
@@ -63,6 +71,11 @@ export default function FunCorner() {
       <img src={baby} alt="Fun baby" />
 
       <ul className="fun-list">
+        <li>
+          <button className="fun-toggle" onClick={toggleNokia}>
+            {nokia ? "✔️" : "▢"} Nokia 3310 Mode
+          </button>
+        </li>
         <li>
           <button className="fun-toggle" onClick={playDialup}>
             {dialPlaying ? "🔊" : "🔈"} Dial-up Sound

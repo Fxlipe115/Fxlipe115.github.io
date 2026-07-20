@@ -74,13 +74,20 @@ body, html {
   border: 6px solid #fff;
 }
 .left  { flex: 1; }
-.center { 
-  flex: 2; 
+.center {
+  flex: 2;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
 .right { flex: 1; }
+
+/* Mobile: stack columns vertically, Portfolios (center) on top */
+@media (max-width: 768px) {
+  .main { flex-direction: column; }
+  .center { order: -1; }
+  .header h1 { font-size: 2rem; }
+}
 
 /* About Me (left) */
 .left h2 { color: cyan; margin-top: 0; }
