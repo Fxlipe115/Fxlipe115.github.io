@@ -24,7 +24,7 @@ export default function PortalsPanel() {
           target="_blank"
           rel="noreferrer"
         >
-          <img src={camera} alt="Enter Photo" width="30%" />
+          <img src={camera} alt="Enter Photo" />
           <br />
           <span>Photography</span>
         </a>
