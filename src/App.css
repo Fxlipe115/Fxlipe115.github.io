@@ -148,6 +148,16 @@ body, html {
   padding: 0;
 }
 .fun-toggle:hover { text-decoration: underline; }
+.fun-toggle:disabled {
+  cursor: default;
+  opacity: 0.6;
+  text-decoration: none;
+}
+.fun-note {
+  color: #888;
+  font-size: 0.75rem;
+  font-style: italic;
+}
 
 /* Magic 8-ball */
 .oracle { margin: 1rem 0; text-align: center; }

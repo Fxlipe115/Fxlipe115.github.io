@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import "./App.css";
 import baby from "./assets/images/baby.gif";
 import keyboard from "./assets/images/keyboard.gif";
@@ -33,6 +33,16 @@ export default function FunCorner() {
   const [answer, setAnswer] = useState(null);
   const [shaking, setShaking] = useState(false);
   const [nokia, setNokia] = useState(false);
+  const [isMobile, setIsMobile] = useState(
+    () => window.matchMedia("(max-width: 768px)").matches
+  );
+
+  useEffect(() => {
+    const mq = window.matchMedia("(max-width: 768px)");
+    const onChange = (e) => setIsMobile(e.matches);
+    mq.addEventListener("change", onChange);
+    return () => mq.removeEventListener("change", onChange);
+  }, []);
 
   const playDialup = () => {
     const audio = new Audio(dialup);
@@ -72,9 +82,10 @@ export default function FunCorner() {
 
       <ul className="fun-list">
         <li>
-          <button className="fun-toggle" onClick={toggleNokia}>
+          <button className="fun-toggle" onClick={toggleNokia} disabled={!isMobile}>
             {nokia ? "✔️" : "▢"} Nokia 3310 Mode
           </button>
+          {!isMobile && <span className="fun-note"> (mobile only)</span>}
         </li>
         <li>
           <button className="fun-toggle" onClick={playDialup}>
