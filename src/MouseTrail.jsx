@@ -15,6 +15,7 @@ export default function MouseTrail() {
     if (isMobile) return;
     const scales = [1, 0.9, 0.8, 0.5, 0.2];
     const handleMouseMove = (e) => {
+      if (document.body.classList.contains("glitter-off")) return;
       scales.forEach((scale) => {
         const range = (1 - scale) * 75;
         const x = e.pageX + Math.round(Math.random() * range - range / 2);
