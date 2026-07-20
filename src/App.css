@@ -100,6 +100,10 @@ body, html {
   text-decoration: none;
   text-align: center;
 }
+.portfolio-links img {
+  height: 120px;
+  width: auto;
+}
 .construction {
   display: block;
   margin: 1rem auto 0;
