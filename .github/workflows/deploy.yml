@@ -4,7 +4,6 @@ on:
   push:
     branches:
       - main
-      - migration-to-vite # For testing purposes
 
 jobs:
   build-and-deploy:

@@ -91,7 +91,7 @@ body, html {
 .center h2 { color: magenta; margin-top: 0; }
 .portfolio-links {
   display: flex;
-  justify-content: spa;
+  justify-content: center;
   gap: 2rem;
   margin: 1rem 0;
 }
