@@ -1,0 +1,47 @@
+/* Phone hidden unless "Nokia 3310 Mode" is toggled on (body.nokia-on). */
+.phone-frame { display: none; }
+
+@media (max-width: 768px) {
+  /* Screen rectangle as fractions of the photo — tune these to nudge the LCD
+     alignment. (left, width, top, height) */
+  :root {
+    --scr-x: 0.141;
+    --scr-w: 0.723;
+    --scr-y: 0.255;
+    --scr-h: 0.222;
+  }
+
+  /* Phone photo stretched to fill the whole viewport (no white letterbox).
+     Since it maps 1:1 to the viewport, screen fractions == viewport percentages. */
+  body.nokia-on .phone-frame {
+    display: block;
+    position: fixed;
+    inset: 0;
+    z-index: 900;
+    background: url('/nokia-3310.png') no-repeat center / 100% 100%;
+    pointer-events: none;
+  }
+
+  /* The page shows through the LCD. */
+  body.nokia-on .app {
+    position: fixed;
+    z-index: 950;
+    min-height: 0;
+    left: calc(var(--scr-x) * 100vw);
+    width: calc(var(--scr-w) * 100vw);
+    top: calc(var(--scr-y) * 100vh);
+    height: calc(var(--scr-h) * 100vh);
+    overflow-y: auto;
+    -webkit-overflow-scrolling: touch;
+    background: url('/back.gif') repeat top left, #000;
+    border-radius: 4.3vw;
+    box-shadow: inset 0 0 10px rgba(0, 0, 0, 0.6);
+  }
+
+  /* Stack the portfolio thumbnails so they fit the narrow LCD */
+  body.nokia-on .portfolio-links {
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+  }
+}

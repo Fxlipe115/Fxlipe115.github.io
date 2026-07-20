@@ -7,6 +7,7 @@ import BioPanel from "./BioPanel.jsx";
 import PortalsPanel from "./PortalsPanel.jsx";
 import FunCorner from "./FunCorner.jsx";
 import Footer from "./Footer.jsx";
+import PhoneFrame from "./PhoneFrame.jsx";
 
 createRoot(document.getElementById("root")).render(
   <StrictMode>
@@ -20,5 +21,6 @@ createRoot(document.getElementById("root")).render(
       <Footer />
     </div>
     <MouseTrail />
+    <PhoneFrame />
   </StrictMode>
 );
