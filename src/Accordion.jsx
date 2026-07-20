@@ -14,7 +14,6 @@ export default function Accordion({ sections }) {
         <div key={title} className="accordion-item">
           <div
             className={`accordion-title ${i === activeIndex ? "active" : ""}`}
-            onMouseEnter={() => toggle(i)}
             onClick={() => toggle(i)}
           >
             {title}

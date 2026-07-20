@@ -12,6 +12,16 @@
   padding: 0.5rem;
   border-radius: 0.25rem;
   transition: background 0.2s;
+  color: cyan;
+  text-decoration: underline;
+}
+
+.accordion-title::before {
+  content: "\25B8 "; /* ▸ collapsed */
+}
+
+.accordion-title.active::before {
+  content: "\25BE "; /* ▾ expanded */
 }
 
 .accordion-title:hover,

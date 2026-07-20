@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Sign My Guestbook!</title>
+  <link rel="icon" href="/favicon.ico" />
+  <style>
+    body {
+      background: url('/back.gif') repeat top left;
+      background-color: #000;
+      background-attachment: fixed;
+      color: #0f0;
+      font-family: 'Comic Sans MS', cursive, sans-serif;
+      text-align: center;
+      margin: 0;
+      padding: 1rem;
+    }
+    .box {
+      max-width: 640px;
+      margin: 2rem auto;
+      border: 6px solid #fff;
+      background: rgba(0, 0, 0, 0.75);
+      padding: 1rem 1.5rem;
+    }
+    h1 { color: magenta; }
+    a { color: cyan; }
+    label { display: block; margin: 0.75rem 0 0.25rem; color: lime; }
+    input, textarea {
+      width: 100%;
+      box-sizing: border-box;
+      background: #000;
+      color: #0f0;
+      border: 2px solid #0f0;
+      font-family: inherit;
+      padding: 0.4rem;
+    }
+    button {
+      margin-top: 1rem;
+      background: magenta;
+      color: #fff;
+      border: 3px outset #fff;
+      font-family: inherit;
+      font-size: 1rem;
+      padding: 0.5rem 1.5rem;
+      cursor: pointer;
+    }
+    .hint { font-size: 0.8rem; color: #aaa; }
+  </style>
+</head>
+<body>
+  <div class="box">
+    <h1>~ Sign My Guestbook! ~</h1>
+    <p class="hint">Leave your mark on the internet.</p>
+    <form id="sign">
+      <label for="name">Your name / handle</label>
+      <input id="name" name="name" maxlength="80" required />
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="4" maxlength="1000" required></textarea>
+      <button type="submit">Sign it!</button>
+    </form>
+    <p><a href="/">&laquo; Back to the hub</a></p>
+  </div>
+  <script>
+    document.getElementById('sign').addEventListener('submit', function (e) {
+      e.preventDefault();
+      alert("It's " + new Date().getFullYear() + ". Did you really expect a functioning guestbook?");
+    });
+  </script>
+</body>
+</html>
