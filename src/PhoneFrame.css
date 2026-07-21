@@ -29,8 +29,8 @@
     min-height: 0;
     left: calc(var(--scr-x) * 100vw);
     width: calc(var(--scr-w) * 100vw);
-    top: calc(var(--scr-y) * 100vh);
-    height: calc(var(--scr-h) * 100vh);
+    top: calc(var(--scr-y) * 100dvh);
+    height: calc(var(--scr-h) * 100dvh);
     overflow-y: auto;
     -webkit-overflow-scrolling: touch;
     background: url('/back.gif') repeat top left, #000;
