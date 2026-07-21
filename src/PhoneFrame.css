@@ -46,4 +46,41 @@
     align-items: center;
     gap: 1rem;
   }
+
+  /* Keypad hotspots (invisible) over the photo's keys — play DTMF */
+  body.nokia-on .phone-keys {
+    position: fixed;
+    z-index: 960;
+    left: 9.4vw;
+    width: 82.8vw;
+    top: 63.3dvh;
+    height: 31.5dvh;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 1fr);
+    pointer-events: none;
+  }
+  body.nokia-on .phone-key {
+    pointer-events: auto;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+  }
+
+  /* Scroll arrows: the two curved keys on the right (up / down) */
+  body.nokia-on .arrow-up,
+  body.nokia-on .arrow-down {
+    position: fixed;
+    z-index: 960;
+    width: 22.6vw;
+    background: transparent;
+    border: 0;
+    padding: 0;
+    cursor: pointer;
+    pointer-events: auto;
+  }
+  body.nokia-on .arrow-up { left: 59vw; top: 52.2dvh; height: 4.8dvh; }
+  body.nokia-on .arrow-down { left: 57.1vw; top: 57.8dvh; height: 5.1dvh; }
 }
+
